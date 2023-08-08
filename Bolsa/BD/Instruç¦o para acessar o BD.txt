@@ -1,0 +1,36 @@
+siga essas instruções para acessar o gerenciador do banco de dados
+
+baixa e instala o Beekeeper Studio 
+
+segue o link de download
+
+https://www.beekeeperstudio.io/get
+
+ele é tipo um Visual Studio só que para banco de dados 
+
+agora entra no beekeeper e se conecta ao nosso banco de dados 
+
+Connection Type: MySQL
+
+Connection Mode: Host and Port
+
+Host: containers-us-west-63.railway.app
+
+Port: 7621
+
+deixa desativado o SSL
+
+User: root
+
+Password: 5bQ8dq1Znj20QcdpXq2h
+
+Default Database: railway
+
+SSH Tunnel deixa desativado 
+
+Read Only Mode deixa desativado
+
+só conectar agora para assim ter acesso ao banco 
+
+você pode salvar a conecção com o nome de Bolsa, Save Passwords ativo e na cor azul. dale grêmio <3
+
