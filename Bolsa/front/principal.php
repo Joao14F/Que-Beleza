@@ -1,4 +1,4 @@
-<?php include_once('../back/verificaUser.php'); ?>
+<?php  include_once('../back/verificaUser.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,13 +59,13 @@
         <div class="row">
             <div class="col-12 col-sm-12 scrolling-list"">
                 <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="" alt="serviço"></a></li>
                 </ul>
             </div>
         </div>
