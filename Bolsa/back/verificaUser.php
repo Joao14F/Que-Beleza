@@ -14,13 +14,13 @@
 
     include_once('conexao.php');    
 
-    $sql = "SELECT * FROM usuário WHERE email_user = '$email'";
+    $sql = "SELECT * FROM user WHERE email = '$email'";
     
     $res = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
 
     $reg = mysqli_fetch_array($res);
 
-if(($reg['email_user'] !== $email) && ($reg['senha_user'] !== $senha)){
+if(($reg['email'] !== $email) && ($reg['senha'] !== $senha)){
     header('location: ../front/login.php');
 }
 ?> 

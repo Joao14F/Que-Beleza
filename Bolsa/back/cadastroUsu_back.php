@@ -12,14 +12,14 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $endereco = $_POST['endereço'];
 
 
-    $sql = "SELECT * FROM usuário WHERE email_user = '$email'";
+    $sql = "SELECT * FROM user WHERE email = '$email'";
 
 
     $result = $conn->query($sql);
     if(mysqli_num_rows($result) < 1)
     {
 
-        $sql = "INSERT INTO usuário (nome_user, sobrenome_user, email_user, telefone_user, senha_user, endereço_user) 
+        $sql = "INSERT INTO user (nome, sobrenome, email, telefone, senha, endereco) 
                              VALUES ('$nome', '$sobrenome', '$email', '$telefone', '$senha', '$endereco')";
         
 
