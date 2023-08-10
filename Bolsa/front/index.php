@@ -11,16 +11,16 @@
 <body>
     <div class="container">
         <div class="row">
-            <button><a href="CadastroProf.html">Profissional</a></button>
+            <button><a href="CadastroProf.php">Profissional</a></button>
         </div>
         <div class="row">
-            <button><a href="loginProf.html">Login profissional</a></button>
+            <button><a href="loginProf.php">Login profissional</a></button>
         </div>
         <div class="row">
-            <button><a href="cadastroUsu.html">Usuário comum</a></button>
+            <button><a href="cadastroUsu.php">Usuário comum</a></button>
         </div>
         <div class="row">
-            <button><a href="login.html">Login usuário comum</a></button>
+            <button><a href="login.php">Login usuário comum</a></button>
         </div>
     </div>
 </body>
