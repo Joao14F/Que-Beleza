@@ -1,4 +1,4 @@
-<?php include_once('../back/verificaProf.php'); ?>
+<?php // include_once('../back/verificaProf.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,6 @@
 
     <style>
         .scrolling-list {
-
             overflow-x: auto;
             white-space: nowrap;
         }
