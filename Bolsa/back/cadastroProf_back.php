@@ -24,14 +24,14 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
 
     if(mysqli_num_rows($result) < 1){
 
-        $sql = "SELECT * FROM usuário WHERE email_user = '$email'";
+        $sql = "SELECT * FROM user WHERE email = '$email'";
         $result = $conn->query($sql);
 
         if(mysqli_num_rows($result) < 1){
 
         
 
-        $sql = "INSERT INTO profissional (nome, sobrenome, email, telefone, senha, endereço, salão, especialização, experiência) 
+        $sql = "INSERT INTO profissional (nome, sobrenome, email, telefone, senha, endereco, salao, especializacao, experiencia) 
                              VALUES ('$nome', '$sobrenome', '$email', '$telefone', '$senha', '$endereco', '$salao', '$especializacao', '$experiencia')";
         
 
@@ -41,7 +41,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
 
             echo '<script type="text/javascript">'; 
             echo 'alert("Cadastro concluido com sucesso!");'; 
-            echo 'window.location.href = "../front/login.php";';
+            echo 'window.location.href = "../front/loginProf.php";';
             echo '</script>';
         
         }

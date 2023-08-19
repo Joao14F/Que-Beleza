@@ -57,7 +57,7 @@
             <div class="col-1 col-sm-1 col-md-1"></div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-12 scrolling-list"">
+            <div class="col-12 col-sm-12 scrolling-list">
                 <ul>
                     <li><a href="" alt="serviço"></a></li>
                     <li><a href="" alt="serviço"></a></li>

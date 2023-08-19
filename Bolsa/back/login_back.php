@@ -9,7 +9,7 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
-        $sql = "SELECT * FROM usuário WHERE email_user = '$email' and senha_user = '$senha'";
+        $sql = "SELECT * FROM user WHERE email = '$email' and senha = '$senha'";
         $result = $conn->query($sql);
 
        if(mysqli_num_rows($result) < 1)
@@ -26,13 +26,13 @@
        else
        {
 
-        $sql1="SELECT * FROM usuário WHERE email_user = '$email'";
+        $sql1="SELECT * FROM user WHERE email = '$email'";
         
-        $sql2 = "SELECT id_user FROM usuário WHERE email_user = '$email'";
+        $sql2 = "SELECT id FROM user WHERE email = '$email'";
         $result2 = $conn->query($sql2);
         $row = $result2->fetch_assoc();
 
-        $_SESSION['id'] = $row['id_user'];      
+        $_SESSION['id'] = $row['id'];      
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
            

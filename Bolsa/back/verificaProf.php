@@ -23,4 +23,7 @@
 if(($reg['email'] !== $email) && ($reg['senha'] !== $senha)){
     header('location: ../front/loginProf.php');
 }
+elseif(("adm" == $email) && ("adm" == $senha)){
+    header('location: ../front/ServicosGen.php');
+}
 ?> 

@@ -45,47 +45,12 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-1 col-sm-1 col-md-1"></div>
-            <input type="search" class="col-10 col-sm-10 col-md-10" style="margin: 2px;">
-            <div class="col-1 col-sm-1 col-md-1"></div>
+        <!-- Area de trabalho refere-se a tela de gerenciamento do profissional, a ideia é q apartir daqui ele vai conseguir 
+    gerenciar os serviços, preços, tempo de duração, avaliação e graficos com seus resultados -->
+    <div class="row">
+            <button><a href="ServicosGen.php">Gerenciar serviços</a></button>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 scrolling-list"">
-                <ul>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 scrolling-list"">
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <ul>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-            </ul>
-    </div>
+
         <footer>
             <div class=" row">
                 <div class="col-1 col-sm-1"></div>
@@ -93,11 +58,11 @@
                 <div class="col-2 col-sm-2"></div>
                 <button class="col-2 col-sm-2"></button>
                 <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"></button>
+                <button class="col-2 col-sm-2"><a href="index.php">Voltar</a></button>
                 <div class="col-1 col-sm-1"></div>
             </div>
-            </footer>
-        </div>
+        </footer>
+    </div>
 </body>
 
 </html>
