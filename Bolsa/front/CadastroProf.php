@@ -7,7 +7,6 @@
     <title>Cadastro Profissional</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="css/CadastroProf.css">
 </head>
 
@@ -15,29 +14,6 @@
     <div class="container" style= "padding: 20px">
         <form action="../back/cadastroProf_back.php" method="post" style= "padding: 20px"> 
             <h1> Cadastro de Serviço </h1>           
-=======
-    <style>
-        body {
-            background-color: #d8bfac;
-        }
-
-        form{
-            background-color: aliceblue;
-            border-radius: 10px;
-            padding: 0px 10px;
-        }
-
-        input[type="submit"] {
-           border-radius: 25px;
-           border: none;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <form action="../back/cadastroProf_back.php" method="post">            
->>>>>>> 5c523658d271ae517605fe19ee9323c9b98ee782
             <div class="row">
             <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o titulo o seu nome</label>
