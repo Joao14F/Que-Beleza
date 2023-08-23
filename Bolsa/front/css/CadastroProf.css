@@ -1,5 +1,5 @@
 body {
-    background-color: #d8bfac;
+    background-color: #b3cbb9;
 }
 
 form{
@@ -14,7 +14,12 @@ input[type="submit"] {
 }
 
 h1 {
+    font-size: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
+h2 {
     font-size: 18px;
     padding: 15px;
-    text-align: center;
+    text-align: center;
 }
