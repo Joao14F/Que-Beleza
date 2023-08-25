@@ -65,7 +65,7 @@
     </div>
     <script>
         function setDefaultLoginCadastro() {
-            document.getElementById('login').innerHTML = '<a href="loginUsu.php">Login</a>';
+            document.getElementById('login').innerHTML = '<a href="login.php">Login</a>';
             document.getElementById('cadastro').innerHTML = '<a href="CadastroUsu.php">Cadastro</a>';
         }
 
