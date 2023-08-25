@@ -7,24 +7,42 @@
     <title>Cadastro Usuário</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/CadastroUsu.css">
 </head>
 
 <body>
     <div class="container">
         <form action="../back/cadastroUsu_back.php" method="POST">
+        <div class="row">
+            <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o titulo o seu nome</label>
+                  <input type="name" class="form-control" id="Nome" placeholder="Nome" name="Título">
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o seu Sobrenome</label>
+                  <input type="name" class="form-control" id="Nome" placeholder="Sobrenome" name="Título">
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o seu E-mail</label>
+                  <input type="name" class="form-control" id="Nome" placeholder="E-mail" name="Título">
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o titulo o seu telefone</label>
+                  <input type="name" class="form-control" id="Nome" placeholder="telefone" name="Título">
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o titulo o seu senha</label>
+                  <input type="name" class="form-control" id="Nome" placeholder="senha" name="Título">
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o titulo o seu endereço</label>
+                  <input type="name" class="form-control" id="Nome" placeholder="cidade,= bairro" name="Título">                
+                </div>
             <div class="row">
-                <input type="text" name="nome" placeholder="nome">
-                <input type="text" name="sobrenome" placeholder="sobrenome">
-                <input type="text" name="email" placeholder="email">
-                <input type="number" name="telefone" placeholder="telefone">
-                <input type="password" name="senha" placeholder="senha">
-                <input type="text" name="endereço" placeholder="Cidade, Bairro">
-            </div>
-            <div class="row">
-                <input type="submit" value="Enviar" name="submit">
+                <input type="submit" value="Enviar" name="submit" class="btn">
             </div>
         </form>
+            
     </div>
 
 </body>

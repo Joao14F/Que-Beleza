@@ -32,5 +32,5 @@ Read Only Mode deixa desativado
 
 só conectar agora para assim ter acesso ao banco 
 
-você pode salvar a conecção com o nome de Bolsa, Save Passwords ativo e na cor azul. dale grêmio <3
+você pode salvar a conecção com o nome de Bolsa, Save Passwords ativo e na cor azul.
 

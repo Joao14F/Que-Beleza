@@ -6,11 +6,11 @@
     <title>Login</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/loginProf.css">
+    <link rel="stylesheet" type="text/css" href="css/loginUsu.css">
+</head>
 </head>
 <body>
     <div class="container">
-        <form action="../back/loginProf_back.php" method="POST">
         <form action="../back/login_back.php" method="POST">
         <div class="row">
                <div class="form-group">

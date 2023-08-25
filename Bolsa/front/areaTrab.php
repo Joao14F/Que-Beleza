@@ -8,25 +8,11 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/areaTrab.css">
 
     <style>
-        .scrolling-list {
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        .scrolling-list ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .scrolling-list li {
-            display: inline-block;
-            padding: 8px;
-            background-color: #f0f0f0;
-            margin: 5px;
-        }
+       
+       
     </style>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
