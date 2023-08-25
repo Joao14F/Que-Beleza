@@ -6,22 +6,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            background-color: #d8bfac;
-        }
-
-        form{
-            background-color: aliceblue;
-            border-radius: 10px;
-            padding: 0px 10px;
-        }
-
-        input[type="submit"] {
-           border-radius: 25px;
-           border: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/loginUsu.css">
+</head>
 </head>
 <body>
     <div class="container">

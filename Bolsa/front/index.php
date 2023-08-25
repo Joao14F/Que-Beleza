@@ -6,29 +6,7 @@
     <title>Tipo de conta</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            background-color: #d8bfac;
-        }
-
-        form{
-            background-color: aliceblue;
-            border-radius: 30px;
-        }
-
-        button {
-            border: none;
-            margin: 5px;
-            border-radius: 10px;
-            color: #6c705e;
-            background-color: #6c705e;
-        }
-
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
     <div class="container">
