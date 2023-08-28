@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container" style= "padding: 20px">
+    <div class="container" style= "padding: 22px">
         <form action="../back/cadastroProf_back.php" method="post" style= "padding: 20px">
         <h1> Cadastro Profissional </h2> 
         <h2> Informações Pessoais </h2>       
