@@ -18,49 +18,49 @@
                 <div class="row">
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Nome do salão</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">CNPJ</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cnpj">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cnpj" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Rua</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="rua">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="rua" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Cidade</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cidade">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cidade" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">CEP</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cep">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cep" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Bairro</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="bairro">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="bairro" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">número</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="numero">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="numero" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Link Maps</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="maps" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Email do salão</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="email" required>
                     </div>
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Numero para contato</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome">
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="contato" required>
                     </div>
 
 
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Insira a sua senha para o salão</label>
-                        <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha">
+                        <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha" required>
                     </div>
                     <input type="submit" value="Enviar" name="submit" class="btn">
                 </div>

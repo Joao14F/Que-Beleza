@@ -43,7 +43,7 @@ if(isset($_POST['submit']))
 
         echo '<script type="text/javascript">'; 
         echo 'alert("concluido!");'; 
-        echo 'window.location.href = "../front/areaTrab.php";';
+        echo 'window.location.href = "../front/loginProf.php";';
         echo '</script>';
         }
         }else{
@@ -66,14 +66,14 @@ if(isset($_POST['submit']))
 
         echo '<script type="text/javascript">'; 
         echo 'alert("concluido!");'; 
-        echo 'window.location.href = "../front/areaTrab.php";';
+        echo 'window.location.href = "../front/loginProf.php";';
         echo '</script>';
     }
         if(mysqli_affected_rows($conn) > 0) {
 
                 echo '<script type="text/javascript">'; 
                 echo 'alert("Cadastro concluido com sucesso!");'; 
-                echo 'window.location.href = "../front/areaTrab.php";';
+                echo 'window.location.href = "../front/loginProf.php";';
                 echo '</script>';
         }
         mysqli_close($conn);   
