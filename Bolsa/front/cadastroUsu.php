@@ -16,27 +16,27 @@
         <div class="row">
             <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o titulo o seu nome</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="Nome" name="Título">
+                  <input type="name" name="nome" class="form-control" id="Nome" placeholder="Nome" required>
                </div>
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o seu Sobrenome</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="Sobrenome" name="Título">
+                  <input type="name" name="sobrenome" class="form-control" id="Nome" placeholder="Sobrenome" required>
                </div>
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o seu E-mail</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="E-mail" name="Título">
+                  <input type="email" name="email" class="form-control" id="Nome" placeholder="E-mail" required>
                </div>
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o titulo o seu telefone</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="telefone" name="Título">
+                  <input type="name" name="telefone" class="form-control" id="Nome" placeholder="telefone" required>
                </div>
                <div class="form-group">
-                  <label class="areas" for="InputEmail1">Insira o titulo o seu senha</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="senha" name="Título">
+                  <label class="areas" for="InputEmail1">Insira o seu senha</label>
+                  <input type="password" name="senha" class="form-control" id="Nome" placeholder="senha" required>
                </div>
                <div class="form-group">
-                  <label class="areas" for="InputEmail1">Insira o titulo o seu endereço</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="cidade,= bairro" name="Título">                
+                  <label class="areas" for="InputEmail1">Insira o seu endereço</label>
+                  <input type="name" name="endereco" class="form-control" id="Nome" placeholder="cidade,= bairro" required>                
                 </div>
             <div class="row">
                 <input type="submit" value="Enviar" name="submit" class="btn">

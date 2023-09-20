@@ -14,15 +14,15 @@ Connection Type: MySQL
 
 Connection Mode: Host and Port
 
-Host: containers-us-west-63.railway.app
+Host: containers-us-west-65.railway.app:6526
 
-Port: 7621
+Port: 6526
 
 deixa desativado o SSL
 
 User: root
 
-Password: 5bQ8dq1Znj20QcdpXq2h
+Password: CI9jaTITUzbNBp6usYfF
 
 Default Database: railway
 
