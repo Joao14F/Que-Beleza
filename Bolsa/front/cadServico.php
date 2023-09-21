@@ -52,6 +52,13 @@
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
+            <input type="file" name="duracao" placeholder="Imagem referencia" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+          <div class="form-group">
             <input type="submit" value="Cadastrar" id="button" name="submit" class="col-12 col-sm-12 col-md-12 btn btn-primary">
           </div>
         </div>
