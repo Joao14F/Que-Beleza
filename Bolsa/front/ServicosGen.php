@@ -4,68 +4,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços cadastro</title>
+  <title>Serviços de Cadastro</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/ServicosGen.css">
+  <style>
+
+  </style>
 </head>
 
 <body>
   <div class="container">
-    <form action="../back/cadastroServico_back.php" method="POST">
+    <div class="row justify-content-center mx-1">
+      <div class="visu col-12 col-sm-12 col-md-12 ">
+        <h3>Serviços já cadastrados</h3>
+          <dl>
+        <?php 
+        include('../back/conexao.php');
+          $sql = "SELECT * FROM servico"; 
+          $res = mysqli_query($conn, $sql); 
+          while ($dado = mysqli_fetch_array($res)) { ?>
+        
+          <div class="col-10 col-sm-12 col-md-10">
+            <dt><?php echo $dado['nome']; ?></dt>
+          </div>
+          <form action="ServicosGen.php" method="POST">
+          <input type="hidden" id='id' name="id" value="<?php echo $dado['id']; ?>"> <!-- não tira o hidden -->
+            <input type="submit" value="Excluir" id="button" name="excluir" class="col-1 col-sm-1 col-md-1 btn btn-primary">
+          </form>
+          <?php 
+            };
+            if(isset($_POST['excluir'])){
 
-      <div class="row">
-        <input type="text" name="nome" placeholder="nome">
+              $idex = $_POST['id'];
+
+              $sqlExcluir = " DELETE FROM servico WHERE id = $idex";
+              mysqli_query($conn, $sqlExcluir);
+
+              header('location: ServicosGen.php');
+            }
+          ?>
+        </dl>
       </div>
-
-    
-
-    <table class="table ">
-      <thead>
-        <tr>
-          <th scope="col-sm-1">Serviços já cadastrados</th>
-        </tr>
-      </thead>
-
-      <tbody>
-      
-       
-
-      </tbody>
-    </table>
-    <div class="row">
-                <input type="submit" value="Enviar" name="submit">
+      <form action="ServicosGen.php" method="POST">
+        <h3>Cadastrar novo serviço</h3>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <input type="text" name="nome" placeholder="Nome do serviço" class="form-control">
             </div>
-    </form>
-
-    <footer>
-      <div class="row">
-        <div class="col-1 col-sm-1"></div>
-        <button class="col-2 col-sm-2"><a href="">....</a></button>
-        <div class="col-2 col-sm-2"></div>
-        <button class="col-2 col-sm-2"><a href="principal.php">principal</a></button>
-        <div class="col-2 col-sm-2"></div>
-        <button class="col-2 col-sm-2"><a href="conta.php">conta</a></button>
-        <div class="col-1 col-sm-1"></div>
-      </div>
-    </footer>
-  </div>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <input type="submit" value="cadastra" id="button" name="cadastra" class="col-12 col-sm-12 col-md-12 btn btn-primary">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
 </body>
-
 </html>
 
-<?php
-        include('../back/conexao.php');
+<?php 
+  if(isset($_POST['cadastra'])) {
 
-        /**/
-        $sql = "SELECT * FROM servico";
-        $res = mysqli_query($conn, $sql);
-        while ($dado = mysqli_fetch_array($res)) {
-        ?>
+    $nome = $_POST['nome'];
 
-          <tr>
-            <td>-<?php echo $dado['nome'] ?></td>
-          </tr>
+    $sql = "SELECT * FROM servico WHERE nome = '$nome'";
+    $result = $conn->query($sql);
 
-        <?php }; ?>
+    if(mysqli_num_rows($result) < 1)
+    {
+        $sql = "INSERT INTO servico (nome) VALUES ('$nome')";
+
+        mysqli_query($conn, $sql);
+        if(mysqli_affected_rows($conn) > 0) {
+
+            header('location: ServicosGen.php');
+        }
+    }
+    else
+    {
+        echo '<script type="text/javascript">';       
+        echo 'alert("Esse serviço já foi cadastrado!");'; 
+        echo 'window.location.href = "ServicosGen.php";';
+        echo '</script>';
+    }
+ }
+?>
