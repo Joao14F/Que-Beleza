@@ -26,9 +26,14 @@
           <button class="btn btn-primary service-button">Editar</button>
           <button class="btn btn-primary service-button">Excluir</button>
         </dl>
-        <dt>Nome do serviço 2</dt>
-        <dd>Descrição do serviço 2</dd>
-
+        <dl>
+          <div class="col-10 col-sm-12 col-md-10">
+            <dt>Nome do serviço 2</dt>
+            <dd>Descrição do serviço 3</dd>
+          </div>
+          <button class="btn btn-primary service-button">Editar</button>
+          <button class="btn btn-primary service-button">Excluir</button>
+        </dl>
 
       </div>
       <form action="../back/cadastroServico_back.php" method="POST">

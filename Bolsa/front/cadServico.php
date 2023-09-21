@@ -22,14 +22,30 @@
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
+          <div class="form-group">
             <input type="text" name="nome" placeholder="Nome do serviço" class="form-control">
+          </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
-            <input type="text" name="descrição" placeholder="Descrição do serviço" class="form-control">
+            <input type="text" name="descrição" placeholder="Descrição" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+          <div class="form-group">
+            <input type="text" name="valor" placeholder="Valor" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+          <div class="form-group">
+            <input type="text" name="duracao" placeholder="Duração" class="form-control">
           </div>
         </div>
       </div>
