@@ -1,4 +1,4 @@
-<?php  include_once('../back/verificaUser.php'); ?>
+<?php // include_once('../back/verificaUser.php'); ?> 
 
 <!DOCTYPE html>
 <html lang="en">

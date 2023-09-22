@@ -11,7 +11,7 @@ body {
     background: #e0e0e0;
     box-shadow: 5px 5px 20px #bebebe,
                -5px -5px 20px #ffffff;
-    margin-top: 800px;
+    margin-top: 500px;
     right: 20%;
   }
 
@@ -27,8 +27,8 @@ body {
     background-color: #6a66a3;
     border-radius:50%;
     position: absolute;
-    right:50%;
-    top:100%;
+    right:70%;
+    top:80%;
 
 }
 
@@ -47,7 +47,7 @@ body {
     background: none;
   }
   
-  .cta span {
+  .cta a {
     padding-bottom: 7px;
     letter-spacing: 4px;
     font-size: 14px;
