@@ -16,47 +16,50 @@
 <body>
   <div class="container">
     <form action="../back/cadastroServico_back.php" method="POST">
-      <div class="row">
-        <h3>Adicionar serviço</h3>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12 col-ms-12">
+          <h3>Adicionar serviço</h3>
+        </div>
+
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
-          <div class="form-group">
-            <input type="text" name="nome" placeholder="Nome do serviço" class="form-control">
-          </div>
+            <div class="form-group">
+              <input type="text" name="nome" placeholder="Nome do serviço" class="form-control">
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
             <input type="text" name="descrição" placeholder="Descrição" class="form-control">
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
             <input type="text" name="valor" placeholder="Valor" class="form-control">
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
             <input type="text" name="duracao" placeholder="Duração" class="form-control">
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
             <input type="file" name="duracao" placeholder="Imagem referencia" class="form-control">
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-12 col-md-12">
           <div class="form-group">
             <input type="submit" value="Cadastrar" id="button" name="submit" class="col-12 col-sm-12 col-md-12 btn btn-primary">

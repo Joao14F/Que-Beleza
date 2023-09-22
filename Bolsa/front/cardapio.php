@@ -42,7 +42,7 @@
 
         <div class="bloco">
             <div class="row">
-                <div class="col-10 col-sm-10 col-md-10">
+                <div class="col-12 col-sm-12 col-md-12">
                     <h4>Pés</h4>
                 </div>
             </div>
@@ -80,7 +80,7 @@
 
         <form action="" method="post">
             <div class="form-group">
-                <select name="" id="" class="">
+                <select name="" id="" class="form-control">
                     <option hidden value="">Cadastrar novo grupo</option>
                     <option value="">Maos</option>
                     <option value="">Pés</option>
@@ -88,6 +88,7 @@
                 </select>
             </div>
         </form>
+
 
     </div>
     </div>
