@@ -1,72 +1,59 @@
+<<<<<<< HEAD
 <?php // include_once('../back/verificaUser.php'); ?> 
 
+=======
+>>>>>>> 247901259c5e44592b8ad7f511be15e8291ddf5e
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>principal</title>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Servico.phpnode_odules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/principal.css">
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const scrollingList = document.querySelector('.scrolling-list');
-            const listItems = document.querySelectorAll('.scrolling-list li');
-            let totalWidth = 0;
-
-            listItems.forEach((item) => {
-                totalWidth += item.offsetWidth;
-            });
-
-            scrollingList.style.width = totalWidth + 'px';
-        });
-    </script>
+    <link rel="stylesheet" type="text/css" href="Servico.phpcss/pincipal.css">
+    
+    <style>
+        /* Adicione o estilo CSS para a barra de rolagem lateral */
+        .scrollable-list {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-1 col-sm-1 col-md-1"></div>
-            <input type="search" class="col-10 col-sm-10 col-md-10" style="margin: 2px;">
-            <div class="col-1 col-sm-1 col-md-1"></div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-10 col-md-10">
+                <input type="search" class="justify-content-center">
+            </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 scrolling-list">
+        <div class="row justify-content-center">
+            <div class="scrollable-list">
                 <ul>
-                    <li><a href="" alt="serviço"></a></li>
-                    <li><a href="" alt="serviço"></a></li>
-                    <li><a href="" alt="serviço"></a></li>
-                    <li><a href="" alt="serviço"></a></li>
-                    <li><a href="" alt="serviço"></a></li>
-                    <li><a href="" alt="serviço"></a></li>
-                    <li><a href="" alt="serviço"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
+                    <li><a href="Servico.php" alt="serviço"><img src="" alt="a" class="img-fluid"></a></li>
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <ul>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-                <li class="col-12"><a href=""></a></li>
-            </ul>
     </div>
-        <footer>
-            <div class=" row">
-                <div class="col-1 col-sm-1"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-1 col-sm-1"></div>
-            </div>
-            </footer>
-        </div>
 </body>
 
 </html>

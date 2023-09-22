@@ -1,0 +1,28 @@
+body {
+    background-image: url('tela.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bloco {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 0.8rem;
+    padding: 1rem;
+    }
+
+  h4 {
+    text-align: center;
+  }
+
+  .bloco dt {
+    font-size: 1rem; /* Use 'em' for font size */
+    font-weight: bold;
+  }
+  
+  .bloco dd {
+    margin-bottom: 0.7rem; /* Use 'em' for margin */
+    text-indent: 0.5rem; /* Use 'em' for text indent */
+  }
+  
