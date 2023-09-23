@@ -9,7 +9,6 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 100%;
         }
 
         th,
@@ -23,7 +22,11 @@
 </head>
 
 <body>
-    <div class="table-responsive table-responsive-sm table-responsive-md">
+    <div class="text-center">
+        <p><a href="calendario.php">Mes</a></p>
+        <p>Dia</p>
+    </div>
+    <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
         <table class="table table-striped">
             <tbody>
                 <tr>

@@ -22,36 +22,23 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
 <html>
 <head>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
         th, td {
-            border: 1px solid black;
-            padding: 8px;
             text-align: center;
         }
-
-        th {
-            background-color: #ccc;
-        }
-
-        td {
-            background-color: #f2f2f2;
-        }
-
     </style>
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="row">
+    <div class="text-center">
         <a href="?ano=<?php echo $ano_anterior; ?>&mes=<?php echo $mes_anterior; ?>">&lt; Mês Anterior</a>
         <?php echo date('F Y', $primeiro_dia); ?>
         <a href="?ano=<?php echo $ano_seguinte; ?>&mes=<?php echo $mes_seguinte; ?>">Próximo Mês &gt;</a>
     </div>
-    
-    <table>
-        <thead>
+        
+    <div class="table-responsive table-responsive-sm table-responsive-md justify-content-center"></div>
+    <table class="table table-bordered">
+        <thead class="table-light">
             <tr>
                 <th>Domingo</th>
                 <th>Segunda-feira</th>
@@ -62,7 +49,7 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
                 <th>Sábado</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class='table-success'>
             <?php
             $dia_atual = 1;
             $primeira_semana = true;
