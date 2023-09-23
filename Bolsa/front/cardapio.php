@@ -24,8 +24,10 @@
             <dl>
                 <div class="row">
                     <div class="col-10 col-sm-10 col-md-10">
+                        <dl>
                         <dt>Nome do serviço 1</dt>
                         <dd>Descrição do serviço 1</dd>
+                        </dl>
                     </div>
                     <div class="col-1 gx-1">
                         <button>

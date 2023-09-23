@@ -28,25 +28,32 @@
         <div class="row">
             <p class="col-12 col-sm-12 col-md-12">⭐⭐⭐⭐⭐</p>
         </div>
-        <div class="row">
-            <div class="col-3 col-sm-3 col-md-3"></div>
-               <button class="col-2 col-sm-2 col-md-2">Registros</button>
-               <div class="col-2 col-sm-2 col-md-2"></div>
-               <button class="col-2 col-sm-2 col-md-2">Agenda</button>
-            
+        <div class="row text-center">
+            <p>Histórico</p>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-12">
-                <ul>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                    <li>Registros</li>
-                </ul>
-            </div>
+        <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th>14/55/78</th>
+                    <td>
+                        <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
+                        <br>
+                        Pintura do cabelo com <a href="prestador.php">Pessoa2</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>12/05/77</th>
+                    <td>
+                        <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
+                        <br>
+                        Pintura do cabelo com <a href="prestador.php">Pessoa2</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
         </div>
     </div>
 </body>
