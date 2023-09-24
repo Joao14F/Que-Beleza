@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <img src="images/unhas.jpeg" alt="imagnes ficticea" class="col-5 col-sm-5 img-fluid">
+            <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-5 col-sm-5 img-fluid">
             <div class="Dados col-7 col-sm-7">
                 <p class="Nome">Nome</p>
                 <p>bla bla</p>
