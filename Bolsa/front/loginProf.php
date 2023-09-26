@@ -11,7 +11,6 @@
 <body>
     <div class="container">
         <form action="../back/loginProf_back.php" method="POST">
-        <form action="../back/login_back.php" method="POST">
         <div class="row">
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o seu E-mail</label>

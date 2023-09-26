@@ -2,8 +2,7 @@
 include_once('conexao.php');
 
 if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']) && !empty($_POST['nome']) 
-&& !empty($_POST['sobrenome']) && !empty($_POST['telefone']) && !empty($_POST['endereço']) && !empty($_POST['salão'])
-&& !empty($_POST['especialização']) && !empty($_POST['experiência']))
+&& !empty($_POST['sobrenome']) && !empty($_POST['telefone']))
 {
     
     //cadastrar
@@ -12,38 +11,40 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $sobrenome = $_POST['sobrenome'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $endereco = $_POST['endereço'];
-    $salao = $_POST['salão'];
-    $especializacao = $_POST['especialização'];
-    $experiencia = $_POST['experiência'];
-
+    $remoto = $_POST['remoto'];
 
     $sql = "SELECT * FROM profissional WHERE email = '$email'";
     $result = $conn->query($sql);
-   
 
     if(mysqli_num_rows($result) < 1){
 
         $sql = "SELECT * FROM user WHERE email = '$email'";
         $result = $conn->query($sql);
 
-        if(mysqli_num_rows($result) < 1){
+        if(mysqli_num_rows($result) < 1){ 
 
+        $sql = "INSERT INTO profissional (nome, sobrenome, email, telefone, senha, remoto) 
+                             VALUES ('$nome', '$sobrenome', '$email', '$telefone', '$senha', '$remoto')";
         
-
-        $sql = "INSERT INTO profissional (nome, sobrenome, email, telefone, senha, endereco, salao, especializacao, experiencia) 
-                             VALUES ('$nome', '$sobrenome', '$email', '$telefone', '$senha', '$endereco', '$salao', '$especializacao', '$experiencia')";
-        
-
         mysqli_query($conn, $sql);
         echo "12 "; 
         if(mysqli_affected_rows($conn) > 0) {
 
+            session_start();
+            
+            $_SESSION['email'] = $email;
+
+            if($remoto == 1){
+                echo '<script type="text/javascript">'; 
+                echo 'alert("Cadastro concluido com sucesso!");'; 
+                echo 'window.location.href = "../front/CadastroLoc.php?id=1";';
+                echo '</script>';
+            }else{
             echo '<script type="text/javascript">'; 
             echo 'alert("Cadastro concluido com sucesso!");'; 
-            echo 'window.location.href = "../front/loginProf.php";';
+            echo 'window.location.href = "../front/CadastroLoc.php?id=2";';
             echo '</script>';
-        
+            }
         }
         mysqli_close($conn);  
         echo "123 ";  
@@ -74,7 +75,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
      mysqli_close($conn);    
      echo "12345678 "; 
      echo '<script type="text/javascript">'; 
-     echo 'alert("Esse email já foi cadastrado!");'; 
+     echo 'alert("Insira todos os campos!");'; 
      echo 'window.location.href = "../front/CadastroProf.php";';
      echo '</script>';
      echo "12345678 "; 
