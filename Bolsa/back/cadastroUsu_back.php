@@ -1,7 +1,7 @@
 <?php
 include_once('conexao.php');
 
-if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']) && !empty($_POST['nome']) && !empty($_POST['sobrenome']) && !empty($_POST['telefone'])&& !empty($_POST['endereço'])){
+if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']) && !empty($_POST['nome']) && !empty($_POST['sobrenome']) && !empty($_POST['telefone'])&& !empty($_POST['endereco'])){
     
     //cadastrar
     $senha = $_POST['senha'];
@@ -9,7 +9,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $sobrenome = $_POST['sobrenome'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $endereco = $_POST['endereço'];
+    $endereco = $_POST['endereco'];
 
 
     $sql = "SELECT * FROM user WHERE email = '$email'";
@@ -28,7 +28,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
 
             echo '<script type="text/javascript">'; 
             echo 'alert("Cadastro concluido com sucesso!");'; 
-            echo 'window.location.href = "../front/login.php";';
+            echo 'window.location.href = "../front/loginUsu.php";';
             echo '</script>';
         
         }

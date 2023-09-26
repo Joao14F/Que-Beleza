@@ -14,11 +14,11 @@
         <div class="row">
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o seu E-mail</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="E-mail" name="Título">
+                  <input type="email" class="form-control" id="Nome" placeholder="E-mail" name="email" required>
                </div>
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o titulo o seu senha</label>
-                  <input type="name" class="form-control" id="Nome" placeholder="senha" name="Título">
+                  <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha" required>
                </div>
             <div class="row">
                 <input type="submit" value="Enviar" name="submit" class="btn">
