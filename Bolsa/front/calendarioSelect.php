@@ -22,7 +22,7 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
 <html>
 <head>
     <style>
-         th, td {
+        th, td {
             text-align: center;
             cursor: pointer;
             width: 40px; /* Defina a largura das células */
@@ -30,31 +30,19 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
             line-height: 40px; /* Define a altura da linha centralizada */
 
         }
-
-        a {
-            text-decoration: none;
-        }
     </style>
-     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="text-center">
-        <a href="?ano=<?php echo $ano_anterior; ?>&mes=<?php echo $mes_anterior; ?>">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-        </a>
+        <a href="?ano=<?php echo $ano_anterior; ?>&mes=<?php echo $mes_anterior; ?>">&lt; Mês Anterior</a>
         <?php echo date('F Y', $primeiro_dia); ?>
-        <a href="?ano=<?php echo $ano_seguinte; ?>&mes=<?php echo $mes_seguinte; ?>">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-        </a>
+        <a href="?ano=<?php echo $ano_seguinte; ?>&mes=<?php echo $mes_seguinte; ?>">Próximo Mês &gt;</a>
     </div>
         
     <div class="table-responsive table-responsive-sm table-responsive-md justify-content-center"></div>
-    <table class="table table-bordered align-middle">
+    <table class="table table-bordered-dark align-middle">
         <thead class="table-light">
             <tr>
                 <th>Domingo</th>
@@ -78,8 +66,8 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
                     if ($primeira_semana && $i < date('w', $primeiro_dia)) {
                         echo "<td></td>";
                     } else {
-                        echo "<td>";
-                        echo "<a href='dia.php?data=" . date('Y-m-d', $primeiro_dia) . "'>" . date('j', $primeiro_dia) . "</a>";
+                        echo "<td onclick='toggleCellColor(this)'>";
+                        echo date('j', $primeiro_dia);
                         echo "</td>";
                         $primeiro_dia += 86400;
                         $dia_atual++;
@@ -92,5 +80,15 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
             ?>
         </tbody>
     </table>
+
+    <script>
+        function toggleCellColor(cell) {
+            if (cell.style.backgroundColor === 'blue') {
+                cell.style.backgroundColor = '';
+            } else {
+                cell.style.backgroundColor = 'blue';
+            }
+        }
+    </script>
 </body>
 </html>
