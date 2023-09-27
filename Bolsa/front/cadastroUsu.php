@@ -2,48 +2,49 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cadastro Usuário</title>
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="css/cadastroUsu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuário</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/CadastroUsu.css">
 </head>
 
 <body>
-   <div class="container" style="padding: 20px">
-      <form class="form" action="../back/cadastroProf_back.php" method="post" style="padding: 20px">
-         <span class="title"> Cadastro de Usuário </span>
-         <span class="subtitle"> Informações Pessoais </span>
-         <div class="row">
-            <div class="form-group" style="margin-left: 10px;">
-              <!--  <label class="areas" for="InputEmail1"></label> -->
-               <input type="name" class="form-control" id="Nome" placeholder="Nome" name="Título">
+    <div class="container">
+        <form action="../back/cadastroUsu_back.php" method="POST">
+        <div class="row">
+            <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o titulo o seu nome</label>
+                  <input type="name" name="nome" class="form-control" id="Nome" placeholder="Nome" required>
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o seu Sobrenome</label>
+                  <input type="name" name="sobrenome" class="form-control" id="Nome" placeholder="Sobrenome" required>
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o seu E-mail</label>
+                  <input type="email" name="email" class="form-control" id="Nome" placeholder="E-mail" required>
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o titulo o seu telefone</label>
+                  <input type="name" name="telefone" class="form-control" id="Nome" placeholder="telefone" required>
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o seu senha</label>
+                  <input type="password" name="senha" class="form-control" id="Nome" placeholder="senha" required>
+               </div>
+               <div class="form-group">
+                  <label class="areas" for="InputEmail1">Insira o seu endereço</label>
+                  <input type="name" name="endereco" class="form-control" id="Nome" placeholder="cidade,= bairro" required>                
+                </div>
+            <div class="row">
+                <input type="submit" value="Enviar" name="submit" class="btn">
             </div>
-            <div class="form-group" style="margin-left: 10px;">
-               <!-- <label class="areas" for="InputEmail1"></label> -->
-               <input type="sobrenome" class="form-control" id="Sobrenome" placeholder="Sobrenome" name="Título">
-            </div>
-            <div class="form-group" style="margin-left: 10px;">
-               <!--  <label class="areas" for="InputEmail1"></label> -->
-               <input type="email" class="form-control" id="Email" placeholder="E-mail" name="Título">
-            </div>
-            <div class="form-group" style="margin-left: 10px;">
-               <!--   <label class="areas" for="InputEmail1"></label> -->
-               <input type="telefone" class="form-control" id="Telefone" placeholder="Telefone" name="Título">
-            </div>
-            <div class="form-group" style="margin-left: 10px;">
-               <!--  <label class="areas" for="InputEmail1"></label>-->
-               <input type="senha" class="form-control" id="Senha" placeholder="Senha" name="Título">
-            </div>
-            <div class="form-group" style="margin-left: 10px;">
-               <!--  <label class="areas" for="InputEmail1"></label> -->
-               <input type="end" class="form-control" id="Endereco" placeholder=" Endereço" name="Título">
-            </div>
-         </div>
-               <button> Enviar </button>
-            </form>
-
-         </div>
+        </form>
+            
+    </div>
 
 </body>
+
+</html>

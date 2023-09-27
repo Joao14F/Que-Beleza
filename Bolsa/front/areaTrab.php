@@ -1,4 +1,4 @@
-<?php // include_once('../back/verificaProf.php'); ?>
+<?php include_once('../back/verificaProf.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +34,7 @@
         <!-- Area de trabalho refere-se a tela de gerenciamento do profissional, a ideia é q apartir daqui ele vai conseguir 
     gerenciar os serviços, preços, tempo de duração, avaliação e graficos com seus resultados -->
     <div class="row">
-            <button><a href="ServicosGen.php">Gerenciar serviços</a></button>
+            <button><a href="cadServicos.php">Gerenciar serviços</a></button>
         </div>
 
         <footer>
