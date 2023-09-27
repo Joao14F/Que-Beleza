@@ -34,11 +34,9 @@
 
             $sqlServ = "SELECT * FROM servicoProf WHERE id_Prof = '$id' AND id_servico = '$idServ'"; 
             $resultServ = mysqli_query($conn, $sqlServ);
-
-            
         ?>
-                    <h1> <?php echo $nomeServ ; ?></h1>
-                    <?php
+            <h1> <?php echo $nomeServ ; ?></h1>
+            <?php
 
           $sql = "SELECT * FROM servicoProf WHERE id_Prof = '$id' AND id_servico = '$idServ'"; 
           $res = mysqli_query($conn, $sql); 
@@ -62,7 +60,8 @@
                                 <div class="form-group">
                                     <input type="hidden" id='id' name="id" value="<?php echo $dado['id']; ?>">
                                     <input type="hidden" id='id' name="nome" value="<?php echo $dado['nome']; ?>">
-                                    <input type="hidden" id='id' name="descricao" value="<?php echo $dado['descricao']; ?>">
+                                    <input type="hidden" id='id' name="descricao"
+                                        value="<?php echo $dado['descricao']; ?>">
                                     <input type="hidden" id='id' name="valor" value="<?php echo $dado['valor']; ?>">
                                     <input type="hidden" id='id' name="duracao" value="<?php echo $dado['duracao']; ?>">
                                     <input type="hidden" id='id' name="imagem" value="<?php echo $dado['imagem']; ?>">
@@ -72,14 +71,15 @@
                             </div>
                         </div>
                     </form>
-                <?php 
+                    <?php 
                 } 
                 ?>
-                    <a href="cadastraServicoProf.php?id=<?php echo $idServ?>" class="btn btn-primary col-sm-12">Adicionar Serviço</a>
-                <?php
+                    <a href="cadastraServicoProf.php?id=<?php echo $idServ?>"
+                        class="btn btn-primary col-sm-12">Adicionar Serviço</a>
+                    <?php
                  };
                 ?>
-                <?php
+                    <?php
     if(isset($_POST['excluir'])){
 
         $idex = $_POST['id'];
@@ -91,11 +91,8 @@
               
     }}
     ?>
-
                 </dl>
             </div>
         </div>
 </body>
-
 </html>
-
