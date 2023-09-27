@@ -36,7 +36,27 @@
                </div>
                <div class="form-group">
                   <label class="areas" for="InputEmail1">Insira o seu endereço</label>
-                  <input type="name" name="endereco" class="form-control" id="Nome" placeholder="cidade,= bairro" required>                
+                  <input type="name" name="endereco" class="form-control" id="Nome" placeholder="cidade" required>                
+                </div>
+                <div class="form-group">
+                    <label class="areas" for="InputEmail1">Rua</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="rua" required>
+                </div>
+                <div class="form-group">
+                    <label class="areas" for="InputEmail1">Cidade</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cidade" required>
+                </div>
+                <div class="form-group">
+                    <label class="areas" for="InputEmail1">CEP</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cep" required>
+                </div>
+                <div class="form-group">
+                    <label class="areas" for="InputEmail1">Bairro</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="bairro" required>
+                </div>
+                <div class="form-group">
+                    <label class="areas" for="InputEmail1">número da casa</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="numero" required>
                 </div>
             <div class="row">
                 <input type="submit" value="Enviar" name="submit" class="btn">
