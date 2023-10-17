@@ -10,6 +10,10 @@ document.querySelector('#home-btn').onclick = () => {
     window.location.href= "index.php";
 }
 
+document.querySelector('#calendar-btn').onclick = () => {
+    window.location.href= "calendario.php";
+}
+
 let navbar = document.querySelector('.navbar');
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
