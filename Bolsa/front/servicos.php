@@ -74,6 +74,11 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            margin: 0px;
+        }
+
+        a img {
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -87,84 +92,112 @@
             <div class="col-8">
                 <figcaption class="figure-caption">Promoçoes</figcaption>
             </div>
-            <div class="col-4">
-                <figcaption class="figure-caption">Ver todas</figcaption>
-            </div>
             <div class="image-container d-flex justify-content-start align-items-center">
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 1" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 1 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 2" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 2 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 3 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 4" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 4 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 5" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 5 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 6" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 6 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 7" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 7 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 8" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 8 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 9" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 9 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 10" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 10 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 11" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 11 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 12" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 12 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 13" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 13 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 14" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 14 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
 
                 <div class="image-caption col-5">
                     <img src="imagens/unhas.jpeg" alt="Image 15" class="img-fluid">
                     <p class="text-limit">Legenda da Imagem 15 que é um texto de exemplo para testar o limite</p>
+                    <figcaption class="figure-caption preço">Valor</figcaption>
                 </div>
             </div>
+        </div>
+        <div class="row justify-content-center">
+            <col-8>
+                <select name="" id="" class="form-select">
+                    <option value="">
+                        <p class="text-responsive">Melhor avaliaçao</p>
+                    </option>
+                    <option value="">
+                        <p class="text-responsive">Menor preço</p>
+                    </option>
+                    <option value="">
+                        <p class="text-responsive">Maior preço</p>
+                    </option>
+                </select>
+            </col-8>
+
         </div>
         <div class="row mt-4">
             <div class="col-5">
