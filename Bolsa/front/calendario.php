@@ -35,6 +35,23 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
             text-decoration: none;
         }
     </style>
+     <script>
+        var currentBlueCell = null; // Variável para rastrear a célula atualmente azul
+        var currentDate = new Date(); // Obtém a data atual
+
+        function toggleCellColor(cell) {
+            if (currentBlueCell !== null) {
+                currentBlueCell.style.backgroundColor = ''; // Limpa a célula anterior
+            }
+
+            if (cell.style.backgroundColor !== 'blue') {
+                cell.style.backgroundColor = 'blue'; // Define a nova célula como azul
+                currentBlueCell = cell; // Atualiza a célula atualmente azul
+            } else {
+                currentBlueCell = null; // Se a célula já estiver azul, limpa a célula atualmente azul
+            }
+        }
+    </script>
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -73,24 +90,57 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
 
             while ($primeiro_dia <= $ultimo_dia) {
                 echo "<tr>";
-
+            
                 for ($i = 0; $i < 7; $i++) {
                     if ($primeira_semana && $i < date('w', $primeiro_dia)) {
                         echo "<td></td>";
                     } else {
-                        echo "<td>";
+                        echo "<td onclick=\"toggleCellColor(this);\">";
                         echo "<a href='dia.php?data=" . date('Y-m-d', $primeiro_dia) . "'>" . date('j', $primeiro_dia) . "</a>";
                         echo "</td>";
                         $primeiro_dia += 86400;
                         $dia_atual++;
                     }
                 }
-
+            
                 echo "</tr>";
                 $primeira_semana = false;
             }
             ?>
         </tbody>
     </table>
+    <button id="visualizarDataSelecionada" style="display: none;">Visualizar Data Selecionada</button>
+    <script>
+        // Selecione o botão "Visualizar Data Selecionada"
+        var btnVisualizarData = document.getElementById('visualizarDataSelecionada');
+
+        // Função para redirecionar para "dia.php" com a data selecionada
+        function redirecionarParaDiaPHP() {
+            if (currentBlueCell !== null) {
+                var dataSelecionada = currentBlueCell.firstChild.innerHTML; // Obtém o dia selecionado
+                var dataFormatada = "<?php echo $ano ?>" + "-" + "<?php echo $mes ?>" + "-" + dataSelecionada;
+                window.location.href = "dia.php?data=" + dataFormatada;
+            }
+        }
+
+        // Quando uma célula é selecionada, mostre o botão "Visualizar Data Selecionada"
+        function toggleCellColor(cell) {
+            if (currentBlueCell !== null) {
+                currentBlueCell.style.backgroundColor = ''; // Limpa a célula anterior
+            }
+
+            if (cell.style.backgroundColor !== 'blue') {
+                cell.style.backgroundColor = 'blue'; // Define a nova célula como azul
+                currentBlueCell = cell; // Atualiza a célula atualmente azul
+                btnVisualizarData.style.display = 'block'; // Mostra o botão
+            } else {
+                currentBlueCell = null; // Se a célula já estiver azul, limpa a célula atualmente azul
+                btnVisualizarData.style.display = 'none'; // Oculta o botão
+            }
+        }
+
+        // Adicione um ouvinte de evento ao botão "Visualizar Data Selecionada"
+        btnVisualizarData.addEventListener('click', redirecionarParaDiaPHP);
+    </script>
 </body>
 </html>
