@@ -4,7 +4,7 @@
     --orange: #6A66A3;
     --black: #130f40;
     --light-color: #666;
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.23);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.23);
     --border: .2rem solid rgb(0, 0, 0.1);
     --outline: .1rem solid rgb(0, 0, 0.1);
     --outline-hover: .2rem solid var(--black);
@@ -41,7 +41,7 @@
     text-align: center;
     padding: 2rem 0;
     padding-bottom: 3rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--black);
   }
 
@@ -245,8 +245,122 @@
 }
 
 
+.features .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
 
+.features .box-container .box{
+  padding: 3rem 2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
 
+.features .box-container .box:hover{
+  outline: var(--outline-hover);
+  outline-offset: 0rem;
+}
+
+.features .box-container .box img {
+  margin: 1rem 0;
+}
+
+.features .box-container .box h3 {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+
+.products .product-slider {
+  padding: 1rem;
+}
+
+.products .product-slider:first-child {
+  margin-bottom: 2rem; 
+}
+
+.products .product-slider .box {
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: .2s linear;
+}
+
+.products .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.products .product-slider .box h3{
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.products .product-slider .box .price{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding: .5rem 0;
+}
+
+.products .product-slider .box .stars i{
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: .5rem 0;
+}
+
+.review .review-slider {
+  padding: 1rem;
+}
+
+.review .review-slider .box{
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: .2s linear;
+  margin-bottom: 10rem;
+
+}
+
+.review .review-slider .box:hover{ 
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.review .review-slider .box p{ 
+  padding: 1rem 0;
+  line-height: 1.8;
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
+
+.review .review-slider .box h3{ 
+  padding-bottom: .5rem;
+  color: var(--black);
+  font-size: 2rem;
+}
+.review .review-slider .box .stars i { 
+  color: var(--orange);
+  font-size: 1.7rem;
+}
   @media (max-width:991px) {
     html {
       font-size: 55%;
