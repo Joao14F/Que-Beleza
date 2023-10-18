@@ -1,6 +1,8 @@
-<?php include_once('../back/verificaProf.php'); ?>
+<?php //include_once('../back/verificaProf.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/areaTrab.css">
 
     <style>
-       
-       
+
     </style>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
@@ -30,24 +31,40 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Area de trabalho refere-se a tela de gerenciamento do profissional, a ideia é q apartir daqui ele vai conseguir 
-    gerenciar os serviços, preços, tempo de duração, avaliação e graficos com seus resultados -->
-    <div class="row">
-            <button><a href="cadServicos.php">Gerenciar serviços</a></button>
+    <div class="container align-items-center justfy-content-center">
+        <div class="row m-2">
+            <button class="rounded-2"><a href="cadServicos.php" class="btn">Gerenciar serviços</a></button>
         </div>
+        <div class="row m-2">
+            <button class="rounded-2"><a href="cadServicos.php" class="btn">Ver avaliações</a></button>
+        </div>
+        <div class="row border-top border-bottom">
+            <div class="col-6">
+                <p>14:45 até 15:15</p>
 
-        <footer>
-            <div class=" row">
-                <div class="col-1 col-sm-1"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"><a href="index.php">Voltar</a></button>
-                <div class="col-1 col-sm-1"></div>
             </div>
-        </footer>
+            <div class="col-6">
+                <p>Pintar unhas</p>
+
+            </div>
+            <div class="col-6">
+                <p>Rua João José de Guimarães, 613, Centro, Sombrio</p>
+            </div>
+            <div class="col-6">
+                <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+        <div class="row border-top border-bottom justify-content-center">
+            <div class="col-6">
+                <p>14:45 até 15:15</p>
+            </div>
+            <div class="col-6">
+                <p>Pintar unhas</p>
+            </div>
+            <div class="col-6 align-self-center">
+                <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
     </div>
 </body>
 
