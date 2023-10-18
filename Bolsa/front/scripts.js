@@ -7,7 +7,7 @@ document.querySelector('#search-btn').onclick = () => {
 let Home = document.querySelector('.home-form');
 
 document.querySelector('#home-btn').onclick = () => {
-    window.location.href = "index.php";
+    window.location.href = "principal2.php";
 }
 
 document.querySelector('#calendar-btn').onclick = () => {
