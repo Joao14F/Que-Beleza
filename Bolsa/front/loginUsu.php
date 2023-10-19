@@ -21,9 +21,10 @@
                   <label class="areas" for="InputEmail1">Insira o titulo o seu senha</label>
                   <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha" require>
                </div>
-            <div class="row">
-                <input type="submit" value="Enviar" name="submit" class="btn">
-            </div>
+               <div class="row">
+        <input type="submit" value="Enviar" name="submit" class="btn">
+        <a href="esqueciSenha.php" class="btn">Esqueci a Senha</a>
+    </div>
     </div>
         </form>
     </div>

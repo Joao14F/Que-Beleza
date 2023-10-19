@@ -1,53 +1,43 @@
 <?php
-    session_start();
-    
-    if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']))
-    {
-        //acessa o banco
-        include_once('conexao.php');
+session_start();
 
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
+    include_once('conexao.php');
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-        $sql = "SELECT * FROM user WHERE email = '$email' and senha = '$senha'";
-        $result = $conn->query($sql);
+    $sql = "SELECT * FROM user WHERE email = '$email' AND senha = '$senha'";
+    $result = $conn->query($sql);
 
-       if(mysqli_num_rows($result) < 1)
-       {
+    if (mysqli_num_rows($result) < 1) {
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
         
         echo '<script type="text/javascript">'; 
-        echo 'alert("Usuário ou senha incorreto");'; 
-        echo 'window.location.href = "../front/login.php";';
+        echo 'alert("Usuário ou senha incorretos");'; 
+        echo 'window.location.href = "../front/loginUsu.php";';
         echo '</script>';
-            
-       }
-       else
-       {
+    } else {
+        $row = $result->fetch_assoc();
+        $userId = $row['id'];
+        $status = $row['verifica'];
 
-        $sql1="SELECT * FROM user WHERE email = '$email'";
-        
-        $sql2 = "SELECT id FROM user WHERE email = '$email'";
-        $result2 = $conn->query($sql2);
-        $row = $result2->fetch_assoc();
-
-        $_SESSION['id'] = $row['id'];      
-        $_SESSION['email'] = $email;
-        $_SESSION['senha'] = $senha;
-           
-        header('location: ../front/principal.php');
-                
-            
-       }
+        if ($status == 0) {
+            echo '<script type="text/javascript">'; 
+            echo 'alert("Seu e-mail não foi verificado. Verifique seu e-mail antes de fazer login.");'; 
+            echo 'window.location.href = "../front/loginUsu.php";';
+            echo '</script>';
+        } else {
+            $_SESSION['id'] = $userId;
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $senha;
+            header('location: ../front/conta.php'); 
+        }
     }
-    else
-    {
-        //não acessa   
-        echo '<script type="text/javascript">'; 
-        echo 'alert("Informe todos os campos!");'; 
-        echo 'window.location.href = "../front/login.php";';
-        echo '</script>'; 
-    }
-
+} else {
+    echo '<script type="text/javascript">'; 
+    echo 'alert("Informe todos os campos!");'; 
+    echo 'window.location.href = "../front/loginUsu.php";';
+    echo '</script>';
+}
 ?>
