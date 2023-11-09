@@ -14,47 +14,12 @@
             background-color: #e5e5e5;
         }
 
-        .buttonunhas {
-            background-color: #6a66a3;
-            color: #fff;
-            border: none;
-            padding: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            border-radius: 20px;
-            margin: 5px;
-        }
-
         .serv {
-            filter: grayscale(100%);
-            filter: blur(5px);
-            filter: opacity(30%);
-            border-radius: 20px;
+            height: 100px;
         }
 
-        .input {
-            border-radius: 12px;
-            border: 1.5px solid lightgrey;
-            outline: none;
-            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-            box-shadow: 0px 0px 20px -18px;
-        }
-
-        .input:hover {
-            border: 2px solid lightgrey;
-            box-shadow: 0px 0px 20px -17px;
-        }
-
-        .input:active {
-            transform: scale(0.95);
-        }
-
-        .input:focus {
-            border: 2px solid grey;
-        }
-
-        p {
-            font-weight: bold;
+        p .text-center{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -62,36 +27,34 @@
 <body>
     <div class="container">
         <div class="row salao">
-            <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0">
+            <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0 w-100">
         </div>
-        <div class="row justify-content-center">
-            <div class="col-10 text-center">
-                <button class="buttonunhas">
+        <div class="botoes align-items-center mt-4">
+            <div class="row justify-content-center m-2">
+                <div class="col-5 justify-content-center">
                     <a href="servicos.php">
-                        <img class="serv" src="unhas.jpeg" alt="Imagem" width="200" height="100">
-                        <p>Unhas</p>
+                        <img class="serv w-100" src="unhas.jpeg" alt="Imagem">
+                        <p class="text-center">Unhas</p>
                     </a>
-                </button>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-10 text-center">
-                <button class="buttonunhas">
+            <div class="row justify-content-center m-2">
+                <div class="col-5 justify-content-center">
                     <a href="servicos.php">
-                        <img class="serv" src="unhas.jpeg" alt="Imagem" width="200" height="100">
-                        <p>Cabelo</p>
+                        <img class="serv w-100" src="unhas.jpeg" alt="Imagem">
+                        <p class="text-center">Cabelo</p>
                     </a>
-                </button>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-10 text-center">
-                <button class="buttonunhas">
+            <div class="row justify-content-center m-2">
+                <div class="col-5 justify-content-center">
+
                     <a href="servicos.php">
-                        <img class="serv" src="unhas.jpeg" alt="Imagem" width="200" height="100">
-                        <p>Maquiagem</p>
+                        <img class="serv w-100" src="unhas.jpeg" alt="Imagem">
+                        <p class="text-center">Maquiagem</p>
                     </a>
-                </button>
+
+                </div>
             </div>
         </div>
     </div>

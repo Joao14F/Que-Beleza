@@ -20,22 +20,23 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-         th, td {
+        th,
+        td {
             text-align: center;
             cursor: pointer;
-            width: 40px; /* Defina a largura das células */
-            height: 40px; /* Defina a altura das células */
-            line-height: 40px; /* Define a altura da linha centralizada */
-
+            width: 100px;
+            height: 80px;
         }
 
-        a {
+        td a {
             text-decoration: none;
+            color: black;
         }
     </style>
-     <script>
+    <script>
         var currentBlueCell = null; // Variável para rastrear a célula atualmente azul
         var currentDate = new Date(); // Obtém a data atual
 
@@ -52,95 +53,102 @@ $ano_seguinte = date('Y', strtotime("+1 month", $primeiro_dia));
             }
         }
     </script>
-     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <div class="text-center">
         <a href="?ano=<?php echo $ano_anterior; ?>&mes=<?php echo $mes_anterior; ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
             </svg>
         </a>
         <?php echo date('F Y', $primeiro_dia); ?>
         <a href="?ano=<?php echo $ano_seguinte; ?>&mes=<?php echo $mes_seguinte; ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
             </svg>
         </a>
     </div>
-        
-    <div class="table-responsive table-responsive-sm table-responsive-md justify-content-center"></div>
-    <table class="table table-bordered align-middle">
-        <thead class="table-light">
-            <tr>
-                <th>Domingo</th>
-                <th>Segunda-feira</th>
-                <th>Terça-feira</th>
-                <th>Quarta-feira</th>
-                <th>Quinta-feira</th>
-                <th>Sexta-feira</th>
-                <th>Sábado</th>
-            </tr>
-        </thead>
-        <tbody class='table-success'>
-            <?php
-            $dia_atual = 1;
-            $primeira_semana = true;
+    <div class="container">
+        <table class="table table-bordered align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th class="align-middle text-center">Domingo</th>
+                    <th class="align-middle text-center">Segunda-feira</th>
+                    <th class="align-middle text-center">Terça-feira</th>
+                    <th class="align-middle text-center">Quarta-feira</th>
+                    <th class="align-middle text-center">Quinta-feira</th>
+                    <th class="align-middle text-center">Sexta-feira</th>
+                    <th class="align-middle text-center">Sábado</th>
+                </tr>
+            </thead>
+            <tbody class='table-success'>
+                <?php
+                $dia_atual = 1;
+                $primeira_semana = true;
 
-            while ($primeiro_dia <= $ultimo_dia) {
-                echo "<tr>";
-            
-                for ($i = 0; $i < 7; $i++) {
-                    if ($primeira_semana && $i < date('w', $primeiro_dia)) {
-                        echo "<td></td>";
-                    } else {
-                        echo "<td onclick=\"toggleCellColor(this);\">";
-                        echo "<a href='dia.php?data=" . date('Y-m-d', $primeiro_dia) . "'>" . date('j', $primeiro_dia) . "</a>";
-                        echo "</td>";
-                        $primeiro_dia += 86400;
-                        $dia_atual++;
+                while ($primeiro_dia <= $ultimo_dia) {
+                    echo "<tr>";
+
+                    for ($i = 0; $i < 7; $i++) {
+                        if ($primeira_semana && $i < date('w', $primeiro_dia)) {
+                            echo "<td></td>";
+                        } else {
+                            echo "<td onclick=\"toggleCellColor(this);\">";
+                            echo "<a href='dia.php?data=" . date('Y-m-d', $primeiro_dia) . "'>" . date('j', $primeiro_dia) . "</a>";
+                            echo "</td>";
+                            $primeiro_dia += 86400;
+                            $dia_atual++;
+                        }
                     }
+
+                    echo "</tr>";
+                    $primeira_semana = false;
                 }
-            
-                echo "</tr>";
-                $primeira_semana = false;
-            }
-            ?>
-        </tbody>
-    </table>
-    <button id="visualizarDataSelecionada" style="display: none;">Visualizar Data Selecionada</button>
-    <script>
-        // Selecione o botão "Visualizar Data Selecionada"
-        var btnVisualizarData = document.getElementById('visualizarDataSelecionada');
+                ?>
+            </tbody>
+        </table>
 
-        // Função para redirecionar para "dia.php" com a data selecionada
-        function redirecionarParaDiaPHP() {
-            if (currentBlueCell !== null) {
-                var dataSelecionada = currentBlueCell.firstChild.innerHTML; // Obtém o dia selecionado
-                var dataFormatada = "<?php echo $ano ?>" + "-" + "<?php echo $mes ?>" + "-" + dataSelecionada;
-                window.location.href = "dia.php?data=" + dataFormatada;
-            }
-        }
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <button id="visualizarDataSelecionada" class="form-control bg-success" style="display: none;">Visualizar Data Selecionada</button>
+            </div>
+        </div>
+        <script>
+            // Selecione o botão "Visualizar Data Selecionada"
+            var btnVisualizarData = document.getElementById('visualizarDataSelecionada');
 
-        // Quando uma célula é selecionada, mostre o botão "Visualizar Data Selecionada"
-        function toggleCellColor(cell) {
-            if (currentBlueCell !== null) {
-                currentBlueCell.style.backgroundColor = ''; // Limpa a célula anterior
+            // Função para redirecionar para "dia.php" com a data selecionada
+            function redirecionarParaDiaPHP() {
+                if (currentBlueCell !== null) {
+                    var dataSelecionada = currentBlueCell.firstChild.innerHTML; // Obtém o dia selecionado
+                    var dataFormatada = "<?php echo $ano ?>" + "-" + "<?php echo $mes ?>" + "-" + dataSelecionada;
+                    window.location.href = "dia.php?data=" + dataFormatada;
+                }
             }
 
-            if (cell.style.backgroundColor !== 'blue') {
-                cell.style.backgroundColor = 'blue'; // Define a nova célula como azul
-                currentBlueCell = cell; // Atualiza a célula atualmente azul
-                btnVisualizarData.style.display = 'block'; // Mostra o botão
-            } else {
-                currentBlueCell = null; // Se a célula já estiver azul, limpa a célula atualmente azul
-                btnVisualizarData.style.display = 'none'; // Oculta o botão
-            }
-        }
+            // Quando uma célula é selecionada, mostre o botão "Visualizar Data Selecionada"
+            function toggleCellColor(cell) {
+                if (currentBlueCell !== null) {
+                    currentBlueCell.style.backgroundColor = ''; // Limpa a célula anterior
+                }
 
-        // Adicione um ouvinte de evento ao botão "Visualizar Data Selecionada"
-        btnVisualizarData.addEventListener('click', redirecionarParaDiaPHP);
-    </script>
+                if (cell.style.backgroundColor !== 'blue') {
+                    cell.style.backgroundColor = 'blue'; // Define a nova célula como azul
+                    currentBlueCell = cell; // Atualiza a célula atualmente azul
+                    btnVisualizarData.style.display = 'block'; // Mostra o botão
+                } else {
+                    currentBlueCell = null; // Se a célula já estiver azul, limpa a célula atualmente azul
+                    btnVisualizarData.style.display = 'none'; // Oculta o botão
+                }
+            }
+
+            // Adicione um ouvinte de evento ao botão "Visualizar Data Selecionada"
+            btnVisualizarData.addEventListener('click', redirecionarParaDiaPHP);
+        </script>
+    </div>
 </body>
+
 </html>

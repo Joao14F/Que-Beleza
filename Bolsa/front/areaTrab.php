@@ -31,37 +31,39 @@
 </head>
 
 <body>
-    <div class="container align-items-center justfy-content-center">
-        <div class="row m-2">
-            <button class="rounded-2"><a href="cadServicos.php" class="btn">Gerenciar serviços</a></button>
+    <div class="container align-items-center justify-content-center">
+        <div class="botoes">
+            <div class="row m-3">
+                <button class="rounded-2"><a href="cadServicos.php" class="btn">Gerenciar serviços</a></button>
+            </div>
+            <div class="row m-3">
+                <button class="rounded-2"><a href="avaliaçoes.php" class="btn">Ver avaliações</a></button>
+            </div>
         </div>
-        <div class="row m-2">
-            <button class="rounded-2"><a href="cadServicos.php" class="btn">Ver avaliações</a></button>
-        </div>
-        <div class="row border-top border-bottom">
-            <div class="col-6">
-                <p>14:45 até 15:15</p>
+        <div class="row m-2 bg-success rounded-3">
+            <div class="col-12 text-center">
+                <p>14:45</p>
 
             </div>
-            <div class="col-6">
+            <div class="col-12 text-center">
                 <p>Pintar unhas</p>
 
             </div>
-            <div class="col-6">
+            <div class="col-12 text-center">
                 <p>Rua João José de Guimarães, 613, Centro, Sombrio</p>
             </div>
-            <div class="col-6">
+            <div class="col-12 text-center">
                 <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
             </div>
         </div>
-        <div class="row border-top border-bottom justify-content-center">
-            <div class="col-6">
-                <p>14:45 até 15:15</p>
+        <div class="row m-2 bg-success rounded-3 justify-content-center">
+            <div class="col-12 text-center">
+                <p>14:45</p>
             </div>
-            <div class="col-6">
+            <div class="col-12 text-center">
                 <p>Pintar unhas</p>
             </div>
-            <div class="col-6 align-self-center">
+            <div class="col-12 text-center">
                 <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
             </div>
         </div>

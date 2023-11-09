@@ -7,102 +7,45 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            padding: 8px;
-            text-align: center;
+        .hora{
+            border-bottom: 2px solid black;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="text-center">
+    <div class="container">
+    <div class="row text-center">
         <p><a href="calendario.php">Mes</a></p>
-        <p>Dia</p>
+        <p>14</p>
     </div>
-    <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
-        <table class="table table-striped">
-            <tbody>
-                <tr>
-                    <th scope="row">8:00</th>
-                    <td>livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">8:30</th>
-                    <td>ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">9:00</th>
-                    <td>livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">9:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">10:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">10:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">11:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">11:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">12:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">12:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">13:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">13:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">14:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">14:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">15:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">15:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-                <tr>
-                    <th scope="row">16:00</th>
-                    <td class="livre">livre</td>
-                </tr>
-                <tr class="table-danger">
-                    <th scope="row">16:30</th>
-                    <td class="ocupado">ocupado</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container justify-content-center">
+        <div class="row hora livre">
+            <div class="col-6 text-center">Horário</div>
+            <div class="col-6 text-center"></div>
+        </div>
+        <div class="row hora ocupada">
+            <div class="col-6 text-center">Horário</div>
+            <div class="col-6 text-center">Corte de cabelo</div>
+        </div>
+        <div class="row hora ocupada">
+            <div class="col-6 text-center">Horário</div>
+            <div class="col-6 text-center">Corte de cabelo</div>
+        </div>
+        <div class="row hora ocupada">
+            <div class="col-6 text-center">Horário</div>
+            <div class="col-6 text-center">Corte de cabelo</div>
+        </div>
+        <div class="row hora ocupada">
+            <div class="col-6 text-center">Horário</div>
+            <div class="col-6 text-center">Corte de cabelo</div>
+        </div>
+        <div class="row hora ocupada">
+            <div class="col-6 text-center">Horário</div>
+            <div class="col-6 text-center">Corte de cabelo</div>
+        </div>
+    </div>
     </div>
 </body>
 
