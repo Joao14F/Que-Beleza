@@ -1,6 +1,8 @@
-<?php include_once('../back/verificaProf.php'); ?>
+<?php //include_once('../back/verificaProf.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/areaTrab.css">
 
     <style>
-       
-       
+
     </style>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
@@ -30,24 +31,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Area de trabalho refere-se a tela de gerenciamento do profissional, a ideia é q apartir daqui ele vai conseguir 
-    gerenciar os serviços, preços, tempo de duração, avaliação e graficos com seus resultados -->
-    <div class="row">
-            <button><a href="cadServicos.php">Gerenciar serviços</a></button>
-        </div>
-
-        <footer>
-            <div class=" row">
-                <div class="col-1 col-sm-1"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"></button>
-                <div class="col-2 col-sm-2"></div>
-                <button class="col-2 col-sm-2"><a href="index.php">Voltar</a></button>
-                <div class="col-1 col-sm-1"></div>
+    <div class="container align-items-center justify-content-center">
+        <div class="botoes">
+            <div class="row m-3">
+                <button class="rounded-2"><a href="cadServicos.php" class="btn">Gerenciar serviços</a></button>
             </div>
-        </footer>
+            <div class="row m-3">
+                <button class="rounded-2"><a href="avaliaçoes.php" class="btn">Ver avaliações</a></button>
+            </div>
+        </div>
+        <div class="row m-2 bg-success rounded-3">
+            <div class="col-12 text-center">
+                <p>14:45</p>
+
+            </div>
+            <div class="col-12 text-center">
+                <p>Pintar unhas</p>
+
+            </div>
+            <div class="col-12 text-center">
+                <p>Rua João José de Guimarães, 613, Centro, Sombrio</p>
+            </div>
+            <div class="col-12 text-center">
+                <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+        <div class="row m-2 bg-success rounded-3 justify-content-center">
+            <div class="col-12 text-center">
+                <p>14:45</p>
+            </div>
+            <div class="col-12 text-center">
+                <p>Pintar unhas</p>
+            </div>
+            <div class="col-12 text-center">
+                <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
     </div>
 </body>
 

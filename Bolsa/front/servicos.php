@@ -199,67 +199,22 @@
             </col-8>
 
         </div>
-        <div class="row mt-4">
-            <div class="col-5">
-                <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
-                <p style="margin-bottom: 3px;">⭐⭐⭐⭐⭐</p>
-                <p style="margin-bottom: 3px;">VALOR</p>
-            </div>
-            <div class="col-7 d-flex align-items-center">
-                <a href="Servico.php">
-                    <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                </a>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-5">
-                <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
-                <p style="margin-bottom: 3px;">⭐⭐⭐⭐⭐</p>
-                <p style="margin-bottom: 3px;">VALOR</p>
-            </div>
-            <div class="col-7 d-flex align-items-center">
-                <a href="Servico.php">
-                    <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                </a>
+        <div class="mt-3 bg-white rounded-2 p-2 m-1">
+            <div class="row justify-content-end">
+                <div class="col-5">
+                    <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
+                    <p style="margin-bottom: 3px;">VALOR</p>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                    <a href="Servico.php">
+                        <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-7">
+                    <p style="margin-bottom: 3px;" class="text-center">⭐⭐⭐⭐⭐</p>
+                </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-5">
-                <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
-                <p style="margin-bottom: 3px;">⭐⭐⭐⭐⭐</p>
-                <p style="margin-bottom: 3px;">VALOR</p>
-            </div>
-            <div class="col-7 d-flex align-items-center">
-                <a href="Servico.php">
-                    <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                </a>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-5">
-                <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
-                <p style="margin-bottom: 3px;">⭐⭐⭐⭐⭐</p>
-                <p style="margin-bottom: 3px;">VALOR</p>
-            </div>
-            <div class="col-7 d-flex align-items-center">
-                <a href="Servico.php">
-                    <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                </a>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-5">
-                <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
-                <p style="margin-bottom: 3px;">⭐⭐⭐⭐⭐</p>
-                <p style="margin-bottom: 3px;">VALOR</p>
-            </div>
-            <div class="col-7 d-flex align-items-center">
-                <a href="Servico.php">
-                    <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                </a>
-            </div>
-        </div>
-
     </div>
     </div>
 </body>
