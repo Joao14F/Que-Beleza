@@ -68,3 +68,14 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+function selectRadio(divId) {
+    document.getElementById(divId).querySelector('input[type="radio"]').checked = true;
+}
+const opcoesDivs = document.querySelectorAll('.opcoes');
+questDivs.forEach(div => {
+    div.addEventListener('click', () => {
+        questDivs.forEach(div => div.classList.remove('selected'));
+        div.classList.add('selected');
+        selectRadio(div.id);
+    });
+});

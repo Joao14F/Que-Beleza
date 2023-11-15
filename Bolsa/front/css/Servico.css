@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+:root {
+    --orange: #6A66A3;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.23);
+    --border: .2rem solid rgb(0, 0, 0.1);
+    --outline: .1rem solid rgb(0, 0, 0.1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+}
+
+.salao img {
+    padding: 2rem 2rem;
+    margin-right: 1rem;
+    border-radius: 4rem;
+}
+
+.stars i {
+    font-size: 0.8rem;
+    color: #fff;
+    padding: .5rem;
+    margin-left: 1.7rem;
+    background-color: #B3CBB9;
+    border-radius: 4rem;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--black);
+    font-weight: bold;
+    text-align: left;
+    margin-left: 1.4rem;
+    padding: .5rem;
+}
+
+input[type="radio"]:checked+button,
+input[type="radio"]:checked+button,
+.opcoes.focused {
+    background-color: var(--orange);
+}
+
+
+input[type="radio"] {
+    position: left;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    align-items: left;
+  }
+
+  button {
+    /* alternativas */
+    left: 43%;
+    padding-top: -100px;
+    font-size: 20px;
+    font-family: "letters";
+    text-align: left;
+    padding-bottom: 3px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 700px;
+    background-color: #dac1c1;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(58, 58, 58);
+    border-style: none;
+  }
+  .selected {
+    background-color: transparent; /* Adicione o estilo que desejar para a alternativa selecionada */
+  }
