@@ -17,39 +17,65 @@
 <body>
     <div class="container">
         <div class="row salao">
-            <img src="../front/fotos/maq.jpg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-12 gx-0">
+            <img src="../front/fotos/maq.jpg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-6 gx-0">
         </div>
-        <div class="stars">
-            <i class="fas fa-star"> 4,5</i>
-            <h3>Maquiagem </h3>
+        <div class="container">
+            <div class=" stars row">
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+            </div>
         </div>
-        <div id="alta" class="quest">
-                        <input type="radio" value="A" name="alternativa" id="altA" checked>
-                        <button for="altA"> Express </button>
-                    </div>
-                    <div id="altb" class="quest">
-                        <input type="radio" value="B" name="alternativa" id="altB">
-                        <button for="altB"> Social </button>
-                    </div>
-                    <div id="altc" class="quest">
-                        <input type="radio" value="C" name="alternativa" id="altC">
-                        <button for="altC"> Blindada </button>
-                    </div>
+        <h3>Maquiagem </h3>
     </div>
-    <script>          
-    function selectRadio(divId) {
-        document.getElementById(divId).querySelector('input[type="radio"]').checked = true;
-    }
-    const questDivs = document.querySelectorAll('.quest');
-    questDivs.forEach(div => {
-        div.addEventListener('click', () => {
-            questDivs.forEach(div => div.classList.remove('selected'));
-            div.classList.add('selected');
-            selectRadio(div.id);
-        });
-    });
+    <div class="row mt-3 justify-content-center">
+        <div id="alta" class=" col-3 quest">
+            <input type="radio" value="A" name="alternativa" id="altA" checked>
+            <button for="altA"> Express </button>
+        </div>
+        <div id="altb" class="col-3 quest">
+            <input type="radio" value="B" name="alternativa" id="altB">
+            <button for="altB"> Social </button>
+        </div>
+        <div id="altc" class=" col-3 quest">
+            <input type="radio" value="C" name="alternativa" id="altC">
+            <button for="altC"> Blindada </button>
+        </div>
+    </div>
+    <div class="borda">
+        <h1> Descrição </h1>
+        <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus natus repellendus, molestias alias architecto ipsam veniam eveniet praesentium minus fugiat impedit distinctio non error ab eligendi vitae optio possimus.</h2>
+    </div>
+        <div class=" enviar">
+            <input type="radio" value="A" name="alternativa" id="altA" checked>
+            <button for="enviar"> Express </button>
+        </div>
+    <?php
+    require('rodape.php');
+    ?>
 
-</script>
+    <script>
+        function selectRadio(divId) {
+            document.getElementById(divId).querySelector('input[type="radio"]').checked = true;
+        }
+        const questDivs = document.querySelectorAll('.quest');
+        questDivs.forEach(div => {
+            div.addEventListener('click', () => {
+                questDivs.forEach(div => div.classList.remove('selected'));
+                div.classList.add('selected');
+                selectRadio(div.id);
+            });
+        });
+    </script>
 
 
 </body>

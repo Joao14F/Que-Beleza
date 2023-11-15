@@ -11,7 +11,7 @@ document.querySelector('#home-btn').onclick = () => {
 }
 
 document.querySelector('#calendar-btn').onclick = () => {
-    window.location.href = "calendario.php";
+    window.location.href = "Servico.php";
 }
 
 document.querySelector('#user-btn').onclick = () => {
