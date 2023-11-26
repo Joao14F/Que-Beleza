@@ -7,64 +7,67 @@
     <title>Cadastro Profissional</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/CadastroProf.css">
+    <link rel="stylesheet" type="text/css" href="css/CadProf.css">
 </head>
 
 <body>
     <div class="container" style="padding: 20px">
-        <form action="../back/cadastroSalao_back.php" method="post" style="padding: 20px">
+        <form class="form" action="../back/cadastroSalao_back.php" method="post" style="padding: 20px">
             <h1> Cadastro Profissional </h2>
                 <h2> Informações Pessoais </h2>
                 <div class="row">
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Nome do salão</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="nome" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">CNPJ</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cnpj" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="cnpj" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Rua</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="rua" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="rua" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Cidade</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cidade" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="cidade" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">CEP</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="cep" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="cep" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Bairro</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="bairro" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="bairro" required>
                     </div>
-                    <div class="form-group">
-                        <label class="areas" for="InputEmail1">número</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="numero" required>
+                    <div class="form-group text-center">
+                        <label class="areas" for="InputEmail1">Número</label>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="numero" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Link Maps</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="maps" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="maps" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Email do salão</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="email" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="email" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Numero para contato</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="contato" required>
+                        <input type="name" class="form-control" id="Nome" placeholder="" name="contato" required>
                     </div>
 
 
                     <div class="form-group">
                         <label class="areas" for="InputEmail1">Insira a sua senha para o salão</label>
-                        <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha" required>
+                        <input type="password" class="form-control" id="Nome" placeholder="" name="senha" required>
                     </div>
-                    <input type="submit" value="Enviar" name="submit" class="btn">
+                    <div class="enviar text-center">
+                        <button for="enviar">Enviar </button>
+                    </div>
                 </div>
         </form>
     </div>
 </body>
+
 </html>
