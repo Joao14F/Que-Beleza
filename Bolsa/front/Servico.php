@@ -55,10 +55,13 @@
         <h1> Descrição </h1>
         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus natus repellendus, molestias alias architecto ipsam veniam eveniet praesentium minus fugiat impedit distinctio non error ab eligendi vitae optio possimus.</h2>
     </div>
-        <div class=" enviar">
-            <input type="radio" value="A" name="alternativa" id="altA" checked>
-            <button for="enviar"> Express </button>
-        </div>
+    <div class="container d-flex justify-content-center align-items-center">
+    <div class="enviar text-center">
+        <input type="radio" value="A" name="alternativa" id="altA" checked>
+        <button for="enviar">Marcar horário</button>
+    </div>
+</div>
+    
     <?php
     require('rodape.php');
     ?>
