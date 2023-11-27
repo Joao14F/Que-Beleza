@@ -8,9 +8,12 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contaProf.css">
+
     <style>
         img {
-            margin: -4px 0px;
+            margin: -4px 0px ;
         }
 
     </style>
@@ -21,9 +24,22 @@
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0">
         </div>
-        <div class="row">
-            <p class="col-12 col-sm-12 col-md-12">⭐⭐⭐⭐⭐</p>
-        </div>
+        <div class="container">
+            <div class=" stars row">
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+                <div class="col-1">
+                    <i class="fas fa-star "></i>
+                </div>
+            </div>
+        </div>        
         <div class="row">
             <p class="col-12 col-sm-12 col-md-12">Nome Develin</p>
         </div>

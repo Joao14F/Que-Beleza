@@ -54,68 +54,41 @@ if (isset($_POST['submit'])) {
     <title>Cadastro Profissional</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/CadastroProf.css">
+    <link rel="stylesheet" type="text/css" href="css/CadProf.css">
 </head>
 
 <body>
-    <div class="container">
-        <form action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
-            <h1 class="text-center"> Cadastrar serviço em <?php echo $nomeServ; ?> </h2>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="form-group">
-                            <label class="areas" for="InputEmail1">Nome</label>
-                            <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
-                        </div>
+    <div class="container" style="padding: 20px">
+        <form class="form" action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
+            <h1> Cadastrar serviço em <?php echo $nomeServ; ?> </h2>
+                <div class="row">
+                    <div class="form-group text-center">
+                        <label class="areas" for="InputEmail1">Nome:</label>
+                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="form-group">
-                            <label class="areas" for="InputEmail1">Descrição</label>
-                            <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
-                        </div>
+                    <div class="form-group text-center">
+                        <label class="areas" for="InputEmail1">Descrição:</label>
+                        <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="form-group">
-                            <label class="areas" for="InputEmail1">Duração minima em minutos</label>
-                            <input type="number" class="form-control" id="Nome" name="duracaoMin">
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="form-group">
-                            <label class="areas" for="InputEmail1">Duração máxima em minutos</label>
-                            <input type="number" class="form-control" id="Nome" name="duracaoMax">
-                        </div>
-                    </div>
-                </div>
+                    <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Duração media em minutos: </label>
+                    <div class="form-group text-center">
+                        <label class="areas text-center" for="InputEmail1">Mínima: </label>
+                        <input type="number" class="form-control"  placeholder="45 min" id="Nome" name="duracaoMin">
 
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="form-group">
-                            <label class="areas" for="InputEmail1">valor minimo</label>
-                            <input type="number" class="form-control" id="Nome" name="valorMin">
-                        </div>
+                        <label class="areas text-center" for="InputEmail1">Máxima: </label>
+                        <input type="number" class="form-control" placeholder="120 min" id="Nome" name="duracaoMax">
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="form-group">
-                            <label class="areas" for="InputEmail1">Valor máximo</label>
-                            <input type="number" class="form-control" id="Nome" name="valorMax">
-                        </div>
-                    </div>
-                </div>
+                    <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Valor medio: </label>
+                    <div class="form-group text-center">
+                        <label class="areas text-center" for="InputEmail1">Mínima: </label>
+                        <input type="number" class="form-control" placeholder="R$150,00" id="Nome" name="valorMin">
 
-                <div class="row justify-content-center">
-                    <div class="col-10 gy-2">
-                        <input type="submit" value="Enviar" name="submit" class="w-100 btn btn-primary">
+                        <label class="areas text-center" for="InputEmail1">Máxima: </label>
+                        <input type="number" class="form-control" placeholder="R$390,00" id="Nome" name="valorMax">
                     </div>
-                </div>
+                    <div class="enviar text-center">
+                <button for="enviar">Enviar </button>
+            </div>
         </form>
 
     </div>

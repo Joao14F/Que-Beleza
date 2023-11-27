@@ -23,10 +23,10 @@
             </div>
             <dl>
                 <div class="row">
-                    <div class="col-10 col-sm-10 col-md-10">
+                    <div class="col-10 col-sm-10 col-md-10 ">
                         <dl>
-                        <dt>Nome do serviço 1</dt>
-                        <dd>Descrição do serviço 1</dd>
+                            <dt>Nome do serviço 1</dt>
+                            <dd>Descrição do serviço 1</dd>
                         </dl>
                     </div>
                     <div class="col-1 gx-1">
@@ -38,7 +38,9 @@
                     </div>
             </dl>
             <div class="row justify-content-center">
-                <input type="submit" value="Adicionar novo serviço" class="col-8 col-sm-8 col-md-8">
+                <button class="add">
+                    Adicionar serviço
+                </button>
             </div>
         </div>
 
@@ -76,19 +78,21 @@
                     </div>
             </dl>
             <div class="row justify-content-center">
-                <input type="submit" value="Adicionar novo serviço" class="col-8 col-sm-8 col-md-8">
+                <button class="add">
+                    Adicionar serviço
+                </button>
             </div>
         </div>
-
-        <form action="" method="post">
-            <div class="form-group">
-                <select name="" id="" class="form-control">
-                    <option hidden value="">Cadastrar novo grupo</option>
-                    <option value="">Maos</option>
-                    <option value="">Pés</option>
-                    <option value="">Cabelo</option>
+        <form class="form text-center" action="" method="post">
+            <div class="select col-8 col-sm-8 col-md-8 text-center" style="margin: 0 auto;">
+                <select>
+                    <option value="1">Cadastrar serviço</option>
+                    <option value="1">Mãos</option>
+                    <option value="2">Pés</option>
+                    <option value="3">Cabelo</option>
                 </select>
             </div>
+
         </form>
 
 
