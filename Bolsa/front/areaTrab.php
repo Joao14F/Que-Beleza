@@ -33,14 +33,18 @@
 <body>
     <div class="container align-items-center justify-content-center">
         <div class="botoes">
-            <div class="row m-3">
-                <button class="rounded-2"><a href="cadServicos.php" class="btn">Gerenciar serviços</a></button>
+            <div class="row m-2">
+                <div class="col-12">
+                    <button class="rounded-2 w-100"><a href="cadServicos.php" class="btn">Gerenciar serviços</a></button>
+                </div>
             </div>
-            <div class="row m-3">
-                <button class="rounded-2"><a href="avaliaçoes.php" class="btn">Ver avaliações</a></button>
+            <div class="row m-2">
+                <div class="col-12">
+                    <button class="rounded-2 w-100"><a href="avaliaçoes.php" class="btn">Ver avaliações</a></button>
+                </div>
             </div>
         </div>
-        <div class="row m-2 bg-success rounded-3">
+        <div class="row m-3 bg-success rounded-3">
             <div class="col-12 text-center">
                 <p>14:45</p>
 
@@ -56,7 +60,7 @@
                 <p>Raissa Felisberto ⭐⭐⭐⭐⭐</p>
             </div>
         </div>
-        <div class="row m-2 bg-success rounded-3 justify-content-center">
+        <div class="row m-3 bg-success rounded-3 justify-content-center">
             <div class="col-12 text-center">
                 <p>14:45</p>
             </div>

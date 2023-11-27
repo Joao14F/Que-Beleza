@@ -13,14 +13,16 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex align-items-center">
+    <!--
     <div class="container">
 
-        <div class="row justify-content-center mx-1">
+        <div class="justify-content-center mx-1">
             <div class="visu col-12 col-sm-12 col-md-12 ">
                 <h3>Serviços já cadastrados</h3>
                 <dl>
-                    <?php 
+                    
+                    <?php /*
         include('../back/conexao.php');
         session_start();
 
@@ -90,9 +92,22 @@
         header('location: cadServicos.php');
               
     }}
-    ?>
+    */
+                    ?>
                 </dl>
             </div>
         </div>
+-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h3>Serviçoes já cadastrados</h3></div>
+        </div>
+        <div class="row">
+            <ul>Unhas</ul>
+            <li>batata</li>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -6,42 +6,41 @@ $id = $_SESSION['id'];
 $idServ = $_GET['id'];
 $imagem = "bnf678d77bfn6d.jpg";
 
-$sql1 = "SELECT * FROM servico WHERE id = '$idServ'"; 
-$res1 = mysqli_query($conn, $sql1); 
-    $serv = mysqli_fetch_array($res1);
-        $idServ = $serv['id'];
-        $nomeServ = $serv['nome'];
+$sql1 = "SELECT * FROM servico WHERE id = '$idServ'";
+$res1 = mysqli_query($conn, $sql1);
+$serv = mysqli_fetch_array($res1);
+$idServ = $serv['id'];
+$nomeServ = $serv['nome'];
 
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
 
     $nome = $_POST['nome'];
     $descricao = $_POST['descricao'];
     $duracao1 = $_POST['duracaoMax'];
     $valor1 = $_POST['valorMax'];
     $duracao2 = $_POST['duracaoMin'];
-    $valor2 = $_POST['valorMin'];	  	  
+    $valor2 = $_POST['valorMin'];
 
-    $valor = $valor2 ."-". $valor1;
-    $duracao = $duracao2 ."-". $duracao1;
+    $valor = $valor2 . "-" . $valor1;
+    $duracao = $duracao2 . "-" . $duracao1;
 
     $sql = "SELECT * FROM servicoProf WHERE nome = '$nome' AND id_servico = '$idServ' AND id_prof = '$id'";
 
     $result = $conn->query($sql);
-    if(mysqli_num_rows($result) < 1)
-    {
+    if (mysqli_num_rows($result) < 1) {
 
         $sql = "INSERT INTO servicoProf (nome, descricao, valor, duracao, imagem, id_servico, id_prof) 
                 VALUES ('$nome', '$descricao', '$valor', '$duracao', '$imagem', '$idServ', '$id')";
-        
+
         mysqli_query($conn, $sql);
 
         header('location: cadServicos.php');
-}
-echo '<script type="text/javascript">'; 
-echo 'alert("Nome ja cadastrado");'; 
-echo 'window.location.href = "./cadServicos.php";';
-echo '</script>'; 
+    }
+    echo '<script type="text/javascript">';
+    echo 'alert("Nome ja cadastrado");';
+    echo 'window.location.href = "./cadServicos.php";';
+    echo '</script>';
 }
 
 ?>
@@ -59,42 +58,67 @@ echo '</script>';
 </head>
 
 <body>
-    <div class="container" style="padding: 20px">
+    <div class="container">
         <form action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
-            <h1> Cadastrar serviço em <?php echo $nomeServ; ?> </h2>
-                <div class="row">
-                    <div class="form-group">
-                        <label class="areas" for="InputEmail1">Nome</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
+            <h1 class="text-center"> Cadastrar serviço em <?php echo $nomeServ; ?> </h2>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="areas" for="InputEmail1">Nome</label>
+                            <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="areas" for="InputEmail1">Descrição</label>
-                        <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="areas" for="InputEmail1">Descrição</label>
+                            <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
+                        </div>
                     </div>
-                    <label class="areas" for="InputEmail1">Duração media minutos </label>
-                    <div class="form-group">
-                        <label class="areas" for="InputEmail1">minima </label>
-                        <input type="number" class="form-control" id="Nome" name="duracaoMin">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="areas" for="InputEmail1">Duração minima em minutos</label>
+                            <input type="number" class="form-control" id="Nome" name="duracaoMin">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="areas" for="InputEmail1">Duração máxima em minutos</label>
+                            <input type="number" class="form-control" id="Nome" name="duracaoMax">
+                        </div>
+                    </div>
+                </div>
 
-                        <label class="areas" for="InputEmail1">maxima </label>
-                        <input type="number" class="form-control" id="Nome" name="duracaoMax">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="areas" for="InputEmail1">valor minimo</label>
+                            <input type="number" class="form-control" id="Nome" name="valorMin">
+                        </div>
                     </div>
-                    <label class="areas" for="InputEmail1">Valor medio </label>
-                    <div class="form-group">
-                        <label class="areas" for="InputEmail1">minima </label>
-                        <input type="number" class="form-control" id="Nome" name="valorMin">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="form-group">
+                            <label class="areas" for="InputEmail1">Valor máximo</label>
+                            <input type="number" class="form-control" id="Nome" name="valorMax">
+                        </div>
+                    </div>
+                </div>
 
-                        <label class="areas" for="InputEmail1">maxima </label>
-                        <input type="number" class="form-control" id="Nome" name="valorMax">
+                <div class="row justify-content-center">
+                    <div class="col-10 gy-2">
+                        <input type="submit" value="Enviar" name="submit" class="w-100 btn btn-primary">
                     </div>
-                    <input type="submit" value="Enviar" name="submit" class="btn">
                 </div>
         </form>
 
     </div>
 </body>
+
 </html>
-
-
-
-

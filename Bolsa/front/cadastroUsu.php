@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group">
                     <label class="areas" for="InputEmail1">Insira o seu endereço</label>
-                    <input type="name" name="endereco" class="form-control" id="Nome" placeholder="cidade,= bairro" required>
+                    <input type="name" name="endereco" class="form-control" id="Nome" placeholder="cidade e bairro" required>
                 </div>
                 <div class="row">
                     <input type="submit" value="Enviar" name="submit" class="btn">
