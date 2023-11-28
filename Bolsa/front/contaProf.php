@@ -19,6 +19,9 @@
 </head>
 
 <body class="d-flex">
+    <?php
+    require('cabecalho.php');
+    ?>
     <div class="container">
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0">
@@ -62,7 +65,7 @@
         </div>
         <div class="row">
             <?php
-            require('rodape.php');
+            require('rodape2.php');
             ?>
         </div>
     </div>

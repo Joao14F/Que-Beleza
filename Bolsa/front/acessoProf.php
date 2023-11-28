@@ -69,11 +69,6 @@
                 </div>
             </div>
         </div>
-        <div class="dd">
-            <h1>
-               ass 
-            </h1>
-        </div>
     </div>
 </body>
 
