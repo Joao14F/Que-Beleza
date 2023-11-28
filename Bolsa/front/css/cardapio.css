@@ -3,6 +3,7 @@
 
 body {
     background-color: #6a66a33f;
+    height: 100dvh;
   }
   
   .bloco {
@@ -33,6 +34,12 @@ body {
     width: 300px;
 
   }
+
+  a {
+    text-decoration: none;
+  }
+
+
   button { 
   padding: 3px;
   padding-right: 7px;

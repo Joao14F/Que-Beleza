@@ -13,7 +13,7 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex align-items-center">
     <div class="container">
         <div class="bloco">
             <div class="row">
@@ -39,7 +39,7 @@
             </dl>
             <div class="row justify-content-center">
                 <button class="add">
-                    Adicionar serviço
+                    <a href="cadastraServicoProf.php">Adicionar serviço</a>
                 </button>
             </div>
         </div>
@@ -96,7 +96,6 @@
         </form>
 
 
-    </div>
     </div>
 </body>
 
