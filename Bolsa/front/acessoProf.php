@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta</title>
+    <title>Profissional</title>
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -12,15 +12,31 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #e5e5e5;
+        }
+
+        .container {
             height: 100dvh;
+            display: flexbox;
         }
 
-        .serv {
-            height: 100px;
+
+        p {
+            background-color: #B3CBB9;
+            border-radius: 16px;
+            color: black;
         }
 
-        p .text-center {
+        p:hover {
+            background-color: #6a66a38e;
+        }
+
+        a {
             text-decoration: none;
+        }
+
+        .botoes {
+            align-self: center;
+
         }
     </style>
 </head>
@@ -30,33 +46,33 @@
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0 w-100">
         </div>
-        <div class="botoes align-self-center mt-4">
+        <div class="botoes d-flexbox align-self-center mt-4">
             <div class="row justify-content-center m-2">
-                <div class="col-5 justify-content-center">
+                <div class="col-6 justify-content-center">
                     <a href="servicos.php">
-                        <img class="serv w-100" src="unhas.jpeg" alt="Imagem">
                         <p class="text-center">Unhas</p>
                     </a>
                 </div>
             </div>
             <div class="row justify-content-center m-2">
-                <div class="col-5 justify-content-center">
+                <div class="col-6 justify-content-center">
                     <a href="servicos.php">
-                        <img class="serv w-100" src="unhas.jpeg" alt="Imagem">
                         <p class="text-center">Cabelo</p>
                     </a>
                 </div>
             </div>
             <div class="row justify-content-center m-2">
-                <div class="col-5 justify-content-center">
-
+                <div class="col-6 justify-content-center">
                     <a href="servicos.php">
-                        <img class="serv w-100" src="unhas.jpeg" alt="Imagem">
                         <p class="text-center">Maquiagem</p>
                     </a>
-
                 </div>
             </div>
+        </div>
+        <div class="dd">
+            <h1>
+               ass 
+            </h1>
         </div>
     </div>
 </body>
