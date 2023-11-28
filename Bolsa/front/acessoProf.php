@@ -12,10 +12,10 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #e5e5e5;
+            height: 100dvh;
         }
 
-        .container {
-            height: 100dvh;
+        .container {    
             display: flexbox;
         }
 
@@ -32,11 +32,12 @@
 
         a {
             text-decoration: none;
+            margin: 3px;
         }
 
         .botoes {
+            margin: 5px;
             align-self: center;
-
         }
     </style>
 </head>
