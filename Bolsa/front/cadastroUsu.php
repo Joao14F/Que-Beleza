@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/CadProf.css">
 </head>
 
-<body>
+<body class="d-flex align-items-center">
     <div class="container">
         <form  class="form" action="../back/cadastroUsu_back.php" method="POST">
             <div class="row">

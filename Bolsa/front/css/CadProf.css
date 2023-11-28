@@ -38,7 +38,8 @@ body {
   .form-group {
     overflow: hidden;
     border-radius: 8px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .input {
@@ -46,7 +47,6 @@ body {
     border: 0;
     outline: 0;
     height: 40px;
-    width: 400px;
     border-bottom: 1px solid #eee;
     font-size: .9rem;
     padding: 15px;
@@ -76,7 +76,6 @@ body {
   .form-control {
     display: block;
     text-align: center;
-    width: 220px;
     padding: 0.375rem 0.375rem;
     font-size: 1rem;
     font-weight: 400;
