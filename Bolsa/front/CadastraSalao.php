@@ -10,11 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/CadProf.css">
 </head>
 
-<body>
-    <div class="container" style="padding: 20px">
+<body class="d-flex align-items-center">
+    <div class="container">
         <form class="form" action="../back/cadastroSalao_back.php" method="post" style="padding: 20px">
-            <h1> Cadastro Profissional </h2>
-                <h2> Informações Pessoais </h2>
+            <h1>Cadastro Salao</h2>
+                <h2>Informações Pessoai</h2>
                 <div class="row">
                     <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Nome do salão</label>
@@ -59,7 +59,7 @@
 
 
                     <div class="form-group">
-                        <label class="areas" for="InputEmail1">Insira a sua senha para o salão</label>
+                        <label class="areas" for="InputEmail1">Insira uma senha para o salão</label>
                         <input type="password" class="form-control" id="Nome" placeholder="" name="senha" required>
                     </div>
                     <div class="enviar text-center">
@@ -67,6 +67,9 @@
                     </div>
                 </div>
         </form>
+        <?php
+        require('rodape.php');
+        ?>
     </div>
 </body>
 

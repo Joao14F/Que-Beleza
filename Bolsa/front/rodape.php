@@ -5,3 +5,5 @@
             <div class="fas fa-user" id="user-btn"> </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>

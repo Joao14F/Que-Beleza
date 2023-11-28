@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/CadProf.css">
 </head>
 
-<body>
-    <div class="container" style="padding: 20px">
+<body class="d-flex align-items-center">
+    <div class="container">
         <form class="form" action="../back/cadastroProf_back.php" method="post" style="padding: 20px">
             <h1> Cadastro Profissional </h2>
                 <h2 class="subtitle"> Informações Pessoais </h2>
@@ -51,7 +51,9 @@
                     </div>
                 </div>
         </form>
-
+        <?php
+        require('rodape.php');
+        ?>
     </div>
 </body>
 

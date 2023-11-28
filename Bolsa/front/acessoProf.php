@@ -12,24 +12,25 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #e5e5e5;
+            height: 100dvh;
         }
 
         .serv {
             height: 100px;
         }
 
-        p .text-center{
+        p .text-center {
             text-decoration: none;
         }
     </style>
 </head>
 
-<body>
+<body class="d-flex">
     <div class="container">
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0 w-100">
         </div>
-        <div class="botoes align-items-center mt-4">
+        <div class="botoes align-self-center mt-4">
             <div class="row justify-content-center m-2">
                 <div class="col-5 justify-content-center">
                     <a href="servicos.php">

@@ -13,19 +13,18 @@
 
     <style>
         img {
-            margin: -4px 0px ;
+            margin: -4px 0px;
         }
-
     </style>
 </head>
 
-<body>
+<body class="d-flex">
     <div class="container">
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0">
         </div>
-        <div class="container">
-            <div class=" stars row">
+        <div>
+            <div class="stars row">
                 <div class="col-1">
                     <i class="fas fa-star "></i>
                 </div>
@@ -39,7 +38,7 @@
                     <i class="fas fa-star "></i>
                 </div>
             </div>
-        </div>        
+        </div>
         <div class="row">
             <p class="col-12 col-sm-12 col-md-12">Nome Develin</p>
         </div>
@@ -60,13 +59,11 @@
             <div class="col-10 gy-2">
                 <a href="cardapio.php"><button class="w-100 rounded">Adicionar serviços</button></a>
             </div>
-            <div class="col-10 gy-2">
-                <a href="calendarioSelect.php"><button class="w-100 rounded">Adicionar feriado</button></a>
-            </div>
         </div>
         <div class="row">
-            <div class="row">
-            </div>
+            <?php
+            require('rodape.php');
+            ?>
         </div>
     </div>
 </body>

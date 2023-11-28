@@ -1,5 +1,5 @@
 <?php
-include('../back/conexao.php');
+/*include('../back/conexao.php');
 session_start();
 
 $id = $_SESSION['id'];
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
     echo 'window.location.href = "./cadServicos.php";';
     echo '</script>';
 }
-
+*/
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <div class="container" style="padding: 20px">
+    <div class="container">
         <form class="form" action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
             <h1> Cadastrar serviço em <?php echo $nomeServ; ?> </h2>
                 <div class="row">

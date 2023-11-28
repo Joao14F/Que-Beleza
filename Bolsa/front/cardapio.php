@@ -79,14 +79,14 @@
             </dl>
             <div class="row justify-content-center">
                 <button class="add">
-                    Adicionar serviço
+                    <a href="CadastraServicoProf.php">Adicionar serviço</a>
                 </button>
             </div>
         </div>
         <form class="form text-center" action="" method="post">
             <div class="select col-8 col-sm-8 col-md-8 text-center" style="margin: 0 auto;">
                 <select>
-                    <option value="1">Cadastrar serviço</option>
+                    <option hidden value="1">Cadastrar serviços</option>
                     <option value="1">Mãos</option>
                     <option value="2">Pés</option>
                     <option value="3">Cabelo</option>
