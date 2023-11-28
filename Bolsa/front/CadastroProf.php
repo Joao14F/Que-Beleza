@@ -36,10 +36,10 @@
                         <label class="areas text-center" for="InputEmail1">Insira sua senha:</label>
                         <input type="password" class="form-control" id="Nome" placeholder="Senha" name="senha">
                     </div>
-                    <div class="form-group text-center custom-select">
                         <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Escolha seu modo de trabalho:</label>
                         <div class="select">
                             <select>
+                                <option hidden value=""></option>
                                 <option value="1">Trabalho em salão</option>
                                 <option value="2">Trabalho em casa</option>
                             </select>

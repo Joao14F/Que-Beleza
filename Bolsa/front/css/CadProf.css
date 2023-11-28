@@ -19,7 +19,6 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 32px 24px 24px;
     gap: 16px;
     text-align: center;
   }
@@ -40,7 +39,6 @@ body {
     overflow: hidden;
     border-radius: 8px;
     margin-top: 5px;
-    width: 400px;
   }
   
   .input {
@@ -111,7 +109,8 @@ body {
     background-color:#bdd2c2;
     background-image: none;
     cursor: pointer;
-    width: 200px;
+    width: 140px;
+    border-radius: 8px;
   }
   /* Remove IE arrow */
   select::-ms-expand {

@@ -67,9 +67,6 @@
                     </div>
                 </div>
         </form>
-        <?php
-        require('rodape.php');
-        ?>
     </div>
 </body>
 

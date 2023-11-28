@@ -10,19 +10,11 @@
     <link rel="stylesheet" type="text/css" href="css/CadProf.css">
 </head>
 
-<body>
+<body class="d-flex align-items-center">
     <div class="container">
         <form class="form" action="../back/cadastroProf_back.php" method="post">
             <span class="title"> Informações sobre locais de atuação</span>
             <div class="row">
-                <div class="form-group text-center">
-                    <!--   <label class="areas" for="InputEmail1">itulo o seu especialização</label> -->
-                    <input type="esp" class="form-control" id="Especializacao" placeholder="Especialização" name="Título">
-                </div>
-                <div class="form-group text-center">
-                    <!--  <label class="areas" for="InputEmail1">itulo sua experiencia</label> -->
-                    <input type="exp" class="form-control" id="Experiencia" placeholder="Experiência" name="Título">
-                </div>
                 <div class="form-group text-center">
                     <label class="areas" for="InputEmail1" style="font-weight: bold; padding: 20px;">Cidades onde atua</label>
                     <div class="form-check form-check-inline text-center">
@@ -55,9 +47,6 @@
                     <input type="time" id="horario" name="horario" class="form-control">
                 </div>
             </div>
-            <!--   <div class="row">
-               <input type="submit" value="Enviar" name="submit" class="btn"> 
-            </div> -->
             <div class="enviar text-center">
                 <button for="enviar">Enviar </button>
             </div>
