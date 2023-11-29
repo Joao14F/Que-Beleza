@@ -1,68 +1,70 @@
 body {
-    background-image: url('tela.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('tela.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
 }
 
 .container {
-    background: #f1f7fe;
-    overflow: hidden;
-    border-radius: 16px;
-    color: #010101;
-  }
-  
-  .form {
-    text-align: center;
-  }
-  
-  /*Form text*/
-  .title {
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /*Inputs box*/
-  .form-group {
-    overflow: hidden;
-    border-radius: 8px;
-    margin-top: 5px;
-  }
-  
-  .input {
-    background: none;
-    border-bottom: 1px solid #eee;
-    font-size: .9rem;
-  }
-  
-  /*botao*/
-  .form button {
-    background-color: #6a66a3;
-    color: #fff;
-    border-radius: 24px;
-    align-items: center;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color .3s ease;
-  }
-  
-  .form button:hover {
-    background-color: #542e54;
-  }
+  background: #f1f7fe;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
 
-  .form-control {
-    text-align: center;
-    font-size: 1rem;
-    color: var(--bs-body-color);
-    background-color: var(--bs-body-bg);
-    transition: border-color.15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-  .form-control:hover {
+.form {
+  text-align: center;
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form-group {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.input {
+  background: none;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+}
+
+/*botao*/
+.form button {
+  background-color: #6a66a3;
+  color: #fff;
+  border-radius: 24px;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color: #542e54;
+}
+
+.form-control {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  transition: border-color.15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:hover {
   background-color: #bdd2c2;
-  }
+}

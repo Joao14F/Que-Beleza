@@ -1,14 +1,17 @@
 body {
-    background-color: #d8bfac;
+    background-image: url('tela.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
 }
 
-form{
+form {
     background-color: aliceblue;
     border-radius: 10px;
     padding: 0px 10px;
 }
 
 input[type="submit"] {
-   border-radius: 25px;
-   border: none;
+    border-radius: 25px;
+    border: none;
 }
