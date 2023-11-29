@@ -26,6 +26,7 @@ include('../back/conexao.php');
     <title>Atualizar Serviço</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/CadProf.css">
     <style>
         body {
             background-image: url('css/tela.png');
@@ -36,64 +37,47 @@ include('../back/conexao.php');
     </style>
 </head>
 
-<body>
-    <div class="container" style="padding: 20px">
-        <form action="../back/alteraServicoProf_back.php?id=<?php echo $id; ?>" method="POST">
-            <div class="row text-center">
-                <h1> Atualizar <?php echo $nome; ?> </h2>
-            </div>
+<body class="d-flex align-items-center">
+    <div class="container">
+        <form class="form" action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
+            <h1 class="title"> Cadastrar serviço em <?php echo $nomeServ; ?> </h1>
             <div class="row">
-                <div class="form-group">
-                    <label class="areas" for="InputEmail1">Nome</label>
-                    <input type="name" class="form-control" id="Nome" placeholder="Nome" value="<?php echo $nome; ?>" name="nome" required>
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Nome:</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
                 </div>
-            </div>
-            <div class="row">
-                <div class="form-group">
-                    <label class="areas" for="InputEmail1">Descrição</label>
-                    <input type="text" class="form-control" id="Nome" placeholder="Descrição" value="<?php echo $descricao; ?>" name="descricao">
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Descrição:</label>
+                    <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
                 </div>
-            </div>
-            <div class="row text-center mt-3">
-                <h5>
-                    Duração média em minutos
-                </h5>
-            </div>
-            <div class="row">
-                <div class="form-group">
-                    <label class="areas" for="InputEmail1">Mínima </label>
-                    <input type="number" class="form-control" id="Nome" value="<?php echo $duracaoMin; ?>" name="duracaoMin">
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Variaçoes:</label>
+                    <input type="text" class="form-control" id="Nome" placeholder="Rápido, social, blindada" name="varia">
                 </div>
-            </div>
-            <div class="row">
-                <div class="form-group">
-                    <label class="areas" for="InputEmail1">Máxima </label>
-                    <input type="number" class="form-control" id="Nome" value="<?php echo $duracaoMax; ?>" name="duracaoMax">
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Imagem referente ao serviço:</label>
+                    <input type="file" class="form-control">
                 </div>
-            </div>
-            <div class="row text-center mt-3">
-                <h5>
-                    Valor médio
-                </h5>
-            </div>
-            <div class="row">
-                <div class="form-group">
-                    <label class="areas" for="InputEmail1">Mínimo </label>
-                    <input type="number" class="form-control" id="Nome" value="<?php echo $valorMin; ?>" name="valorMin">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group">
-                    <label class="areas" for="InputEmail1">Máxima </label>
-                    <input type="number" class="form-control" id="Nome" value="<?php echo $valorMax; ?>" name="valorMax">
-                </div>
-            </div>
-            <div class="row justify-content-center mt-2">
-                <div class="col-9">
-                    <input type="submit" value="Enviar" name="submit" class="btn btn-primary w-100">
-                </div>
-            </div>
+                <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Duração media em minutos: </label>
+                <div class="form-group text-center">
+                    <label class="areas text-center" for="InputEmail1">Mínima: </label>
+                    <input type="number" class="form-control" placeholder="45 min" id="Nome" name="duracaoMin">
 
+                    <label class="areas text-center" for="InputEmail1">Máxima: </label>
+                    <input type="number" class="form-control" placeholder="120 min" id="Nome" name="duracaoMax">
+                </div>
+                <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Valor medio: </label>
+                <div class="form-group text-center">
+                    <label class="areas text-center" for="InputEmail1">Mínimo: </label>
+                    <input type="number" class="form-control" placeholder="R$150,00" id="Nome" name="valorMin">
+
+                    <label class="areas text-center" for="InputEmail1">Máximo: </label>
+                    <input type="number" class="form-control" placeholder="R$390,00" id="Nome" name="valorMax">
+                </div>
+                <div class="enviar text-center">
+                    <button for="enviar">Enviar </button>
+                </div>
+            </div>
         </form>
 
     </div>

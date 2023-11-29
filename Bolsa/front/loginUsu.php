@@ -18,7 +18,7 @@
                 <h3>Logue-se</h3>
             </div>
         </div>
-        <form action="../back/login_back.php" method="POST">
+        <form action="../back/loginProf_back.php" method="POST">
             <div class="row">
                 <div class="form-group">
                     <label class="areas" for="InputEmail1">Insira o seu E-mail</label>
@@ -31,8 +31,10 @@
                     <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha" required>
                 </div>
             </div>
-            <div class="row">
-                <input type="submit" value="Enviar" name="submit" class="btn">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <input type="submit" value="Enviar" name="submit" class="btn btn-primary w-100 m-2">
+                </div>
             </div>
         </form>
     </div>

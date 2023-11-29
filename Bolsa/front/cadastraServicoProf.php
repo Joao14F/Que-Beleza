@@ -61,33 +61,42 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <form class="form" action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
             <h1 class="title"> Cadastrar serviço em <?php echo $nomeServ; ?> </h1>
-                <div class="row">
-                    <div class="form-group text-center">
-                        <label class="areas" for="InputEmail1">Nome:</label>
-                        <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
-                    </div>
-                    <div class="form-group text-center">
-                        <label class="areas" for="InputEmail1">Descrição:</label>
-                        <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
-                    </div>
-                    <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Duração media em minutos: </label>
-                    <div class="form-group text-center">
-                        <label class="areas text-center" for="InputEmail1">Mínima: </label>
-                        <input type="number" class="form-control"  placeholder="45 min" id="Nome" name="duracaoMin">
+            <div class="row">
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Nome:</label>
+                    <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
+                </div>
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Descrição:</label>
+                    <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
+                </div>
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Variaçoes:</label>
+                    <input type="text" class="form-control" id="Nome" placeholder="Rápido, social, blindada" name="varia">
+                </div>
+                <div class="form-group text-center">
+                    <label class="areas" for="InputEmail1">Imagem referente ao serviço:</label>
+                    <input type="file" class="form-control">
+                </div>
+                <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Duração media em minutos: </label>
+                <div class="form-group text-center">
+                    <label class="areas text-center" for="InputEmail1">Mínima: </label>
+                    <input type="number" class="form-control" placeholder="45 min" id="Nome" name="duracaoMin">
 
-                        <label class="areas text-center" for="InputEmail1">Máxima: </label>
-                        <input type="number" class="form-control" placeholder="120 min" id="Nome" name="duracaoMax">
-                    </div>
-                    <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Valor medio: </label>
-                    <div class="form-group text-center">
-                        <label class="areas text-center" for="InputEmail1">Mínimo: </label>
-                        <input type="number" class="form-control" placeholder="R$150,00" id="Nome" name="valorMin">
+                    <label class="areas text-center" for="InputEmail1">Máxima: </label>
+                    <input type="number" class="form-control" placeholder="120 min" id="Nome" name="duracaoMax">
+                </div>
+                <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Valor medio: </label>
+                <div class="form-group text-center">
+                    <label class="areas text-center" for="InputEmail1">Mínimo: </label>
+                    <input type="number" class="form-control" placeholder="R$150,00" id="Nome" name="valorMin">
 
-                        <label class="areas text-center" for="InputEmail1">Máximo: </label>
-                        <input type="number" class="form-control" placeholder="R$390,00" id="Nome" name="valorMax">
-                    </div>
-                    <div class="enviar text-center">
-                <button for="enviar">Enviar </button>
+                    <label class="areas text-center" for="InputEmail1">Máximo: </label>
+                    <input type="number" class="form-control" placeholder="R$390,00" id="Nome" name="valorMax">
+                </div>
+                <div class="enviar text-center">
+                    <button for="enviar">Enviar </button>
+                </div>
             </div>
         </form>
 

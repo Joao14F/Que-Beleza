@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="form-group text-center">
-                    <label class="areas" for="InputEmail1">Início funcionamento</label>
+                    <label class="areas" for="InputEmail1">Início expediente</label>
                     <input type="time" id="horario" name="horario" class="form-control">
                 </div>
                 <div class="form-group text-center">
