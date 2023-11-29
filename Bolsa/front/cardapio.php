@@ -12,9 +12,12 @@
 
     </style>
 </head>
+<?php
+require('cabecalho.php');
+?>
 
 <body class="d-flex align-items-center">
-    <div class="container">
+    <div class="container" style="padding-top: 18rem;">
         <div class="bloco">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12">
@@ -83,7 +86,7 @@
                 </button>
             </div>
         </div>
-        <form class="form text-center" action="" method="post">
+        <form class="form text-center" action="" method="post" style="padding-bottom: 8rem;">
             <div class="select col-8 col-sm-8 col-md-8 text-center" style="margin: 0 auto;">
                 <select>
                     <option hidden value="1">Cadastrar serviços</option>
@@ -94,9 +97,11 @@
             </div>
 
         </form>
-
-
     </div>
+    <footer><?php
+            require('rodape2.php');
+            ?></footer>
+
 </body>
 
 </html>

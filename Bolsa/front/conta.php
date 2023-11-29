@@ -15,9 +15,11 @@
 
     </style>
 </head>
-
+<?php
+require('cabecalho.php');
+?>
 <body>
-    <div class="container">
+    <div class="container" style="padding-top: 9rem;">
         <div class="row">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" width="150px" height="100px" class="col-5 col-sm-5 img-fluid">
             <div class="Dados col-7 col-sm-7">
@@ -45,7 +47,7 @@
         </div>        
         </div>
         <div class="row text-center">
-            <h1>Histórico</h1>
+            <h1 class="hist">Histórico</h1>
         </div>
         <div class="row">
         <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
@@ -72,6 +74,9 @@
     </div>
         </div>
     </div>
+    <?php
+require('rodape2.php');
+?>
 </body>
 
 </html>

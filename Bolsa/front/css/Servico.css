@@ -28,7 +28,7 @@ body {
     color: #B3CBB9;
 }
 
-h3 {
+h3.aaa {
     font-family: 'Poppins';
     font-size: 1.7rem;
     line-height: 1.8;
@@ -141,7 +141,7 @@ input[type="radio"] {
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
   }
-  h1 {
+  h1.ooo {
   padding-top: 3.5rem;
   padding-left: 2rem;
   color: var(--black);

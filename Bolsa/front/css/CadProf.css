@@ -2,7 +2,7 @@ body {
     background-image: url('tela.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100dvh;
+    height: 100%;
 }
 
 .container {
@@ -104,10 +104,9 @@ body {
     /* Personalize */
     flex: 1;
     padding: 0 1em;
-    color: #fff;
+    color: black;
     background-color:#bdd2c2;
     background-image: none;
-    cursor: pointer;
     width: 140px;
     border-radius: 8px;
   }
@@ -122,11 +121,9 @@ body {
     width: 20em;
     height: 3em;
     border-radius: .25em;
-    overflow: hidden;
   }
   /* Arrow */
   .select::after {
-    content: '\25BC';
     position: absolute;
     top: 0;
     right: 0;
@@ -146,7 +143,6 @@ body {
     text-decoration: drop-shadow;
     padding: .25em;
     border-radius: .50em;
-    background: pink;
   }
   
   .down_note {

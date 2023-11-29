@@ -13,7 +13,7 @@
 <body class="d-flex align-items-center">
     <div class="container">
         <form class="form" action="../back/cadastroProf_back.php" method="post" style="padding: 20px">
-            <h1> Cadastro Profissional </h2>
+            <h1 class="title"> Cadastro Profissional </h1>
                 <h2 class="subtitle"> Informações Pessoais </h2>
                 <div class="row">
                     <div class="form-group text-center">
@@ -51,9 +51,7 @@
                     </div>
                 </div>
         </form>
-        <?php
-        require('rodape.php');
-        ?>
+    
     </div>
 </body>
 
