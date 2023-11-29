@@ -2,7 +2,7 @@ body {
     background-image: url('tela.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100dvh;
+    height: 100%;
 }
 
 .container {
@@ -27,6 +27,7 @@ body {
   .title {
     font-weight: bold;
     font-size: 1.6rem;
+    padding-top: 10px;
   }
   
   .subtitle {

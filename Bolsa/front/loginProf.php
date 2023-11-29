@@ -14,10 +14,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h3>Logue-se</h3>
+                <h1 class="title" style="padding: 10px">Login</h1>
+                <h2 class="subtitle"> Bem-vindo Profissional! </h2>
             </div>
         </div>
-        <form action="../back/loginProf_back.php" method="POST">
+        <form class="form" action="../back/loginProf_back.php" method="POST" style="padding: 20px">
             <div class="row">
                 <div class="form-group">
                     <label class="areas" for="InputEmail1">Insira o seu E-mail</label>
@@ -27,12 +28,12 @@
             <div class="row">
                 <div class="form-group">
                     <label class="areas" for="InputEmail1">Insira o titulo o seu senha</label>
-                    <input type="password" class="form-control" id="Nome" placeholder="senha" name="senha" required>
+                    <input type="password" class="form-control" id="Nome" placeholder="Senha" name="senha" required>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-6">
-                    <input type="submit" value="Enviar" name="submit" class="btn btn-primary w-100 m-2">
+                <div class="enviar text-center">
+                    <button for="enviar">Enviar </button>
                 </div>
             </div>
         </form>
