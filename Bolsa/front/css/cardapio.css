@@ -4,6 +4,7 @@
 body {
     background-color: #6a66a33f;
     height: 100dvh;
+    position: relative;
   }
   
   .bloco {
@@ -23,11 +24,15 @@ body {
   .bloco dt {
     font-size: 1rem; /* Use 'em' for font size */
     font-weight: bold;
+    font-family: 'Poppins';
+
   }
   
   .bloco dd {
     font-size: 1rem;
     margin-bottom: 0.7rem; /* Use 'em' for margin */
+    font-family: 'Poppins';
+
   }
 
   input {

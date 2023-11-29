@@ -19,11 +19,21 @@ body {
     padding: 1rem;
 }
 
-h1 {
+ h1.Nome {
     font-family: 'Poppins';
     font-size: 1rem;
     font-weight: bold;
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+h1.hist {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color: black;
 }
 
 p {

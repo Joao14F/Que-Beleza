@@ -29,14 +29,13 @@
         }
 
         .footer .icons div:hover {
-            background: var(--orange);
-            color: #e5e5e5;
+            color: var(--orange);
         }
 
         .footer .icons div {
-            height:3.5rem;
-            width: 3.5rem;
-            line-height: 3.5rem;
+            height:1rem;
+            width: 1rem;
+            line-height: 1rem;
             border-radius: .5rem;
             color: var(--black);
             font-size: 1.5rem;
@@ -45,7 +44,7 @@
             align-self: center;
             align-content: center;
             justify-content: center;
-            padding: 0 .8rem;
+            padding: 0 2.3rem;
         }
 
         .footer {

@@ -9,13 +9,26 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e5e5e5;
-            height: 100dvh;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+        :root {
+            --orange: #6A66A3;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.23);
+            --border: .2rem solid rgb(0, 0, 0.1);
+            --outline: .1rem solid rgb(0, 0, 0.1);
+            --outline-hover: .2rem solid var(--black);
         }
 
-        .container {    
+        body {
+            font-family: 'Poppins';
+            background-color: #e5e5e5;
+            height: 100dvh;
+
+        }
+
+        .container {
             display: flexbox;
         }
 
@@ -24,6 +37,14 @@
             background-color: #B3CBB9;
             border-radius: 16px;
             color: black;
+            font-size: 0.8rem;
+            width: 100px;
+            box-shadow: var(--box-shadow);
+            height: 30px;
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            padding: 0.3rem;
         }
 
         p:hover {
@@ -32,15 +53,23 @@
 
         a {
             text-decoration: none;
-            margin: 3px;
+            margin-top: -10px;
+            
         }
 
         .botoes {
             margin: 5px;
             align-self: center;
         }
+
+        img {
+            padding-top: 7rem;
+        }
     </style>
 </head>
+<?php
+require('cabecalho.php');
+?>
 
 <body class="d-flex">
     <div class="container">
@@ -71,6 +100,9 @@
             </div>
         </div>
     </div>
+    <?php
+require('rodape2.php');
+?>
 </body>
 
 </html>

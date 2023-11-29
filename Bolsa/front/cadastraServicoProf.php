@@ -60,14 +60,14 @@ if (isset($_POST['submit'])) {
 <body class="d-flex align-items-center">
     <div class="container">
         <form class="form" action="./cadastraServicoProf.php?id=<?php echo $idServ; ?>" method="post" style="padding: 20px">
-            <h1> Cadastrar serviço em <?php echo $nomeServ; ?> </h2>
+            <h1 class="title"> Cadastrar serviço em <?php echo $nomeServ; ?> </h1>
                 <div class="row">
                     <div class="form-group text-center">
                         <label class="areas" for="InputEmail1">Nome:</label>
                         <input type="name" class="form-control" id="Nome" placeholder="Nome" name="nome" required>
                     </div>
                     <div class="form-group text-center">
-                        <label class="areas for="InputEmail1">Descrição:</label>
+                        <label class="areas" for="InputEmail1">Descrição:</label>
                         <input type="text" class="form-control" id="Nome" placeholder="Descrição" name="descricao">
                     </div>
                     <label class="areas text-center" for="InputEmail1" style="font-weight: bold; padding: 20px;">Duração media em minutos: </label>

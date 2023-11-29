@@ -13,9 +13,12 @@
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+<?php
+require('cabecalho.php');
+?>
 
 <body>
-    <div class="container">
+    <div class="container" style="padding-top: 8rem;">
         <div class="row salao">
             <img src="../front/fotos/maq.jpg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-6 gx-0">
         </div>
@@ -35,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <h3>Maquiagem </h3>
+        <h3 class="aaa">Maquiagem </h3>
     </div>
     <div class="row mt-3 justify-content-center">
         <div id="alta" class=" col-3 quest">
@@ -52,18 +55,18 @@
         </div>
     </div>
     <div class="borda">
-        <h1> Descrição </h1>
+        <h1 class="ooo"> Descrição </h1>
         <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus natus repellendus, molestias alias architecto ipsam veniam eveniet praesentium minus fugiat impedit distinctio non error ab eligendi vitae optio possimus.</h2>
     </div>
-    <div class="container d-flex justify-content-center align-items-center">
-    <div class="enviar text-center">
-        <input type="radio" value="A" name="alternativa" id="altA" checked>
-        <button for="enviar">Marcar horário</button>
+    <div class="container d-flex justify-content-center align-items-center" style="padding-bottom: 8rem;">
+        <div class="enviar text-center">
+            <input type="radio" value="A" name="alternativa" id="altA" checked>
+            <button for="enviar">Marcar horário</button>
+        </div>
     </div>
-</div>
-    
+
     <?php
-    require('rodape.php');
+    require('rodape2.php');
     ?>
 
     <script>

@@ -48,7 +48,7 @@
         }
 
         .input {
-            width: 80%;
+            width: 90%;
             height: 35px;
             line-height: 28px;
             padding: 0 1rem;
@@ -85,7 +85,7 @@
             color: var(--orange);
         }
 
-         a {
+        a {
             font-size: 10px;
             color: var(--black);
             font-family: 'Poppins';
@@ -103,19 +103,17 @@
 
         .header {
             background: #b3cbb9;
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 2rem 9%;
             box-shadow: var(--box-shadow);
+            /* margin-bottom: 4rem; Removido para evitar espaço extra */
         }
-
-
         .header .logo {
             font-size: 1.3rem;
             font-weight: bolder;
@@ -134,7 +132,7 @@
                     <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
                 </g>
             </svg>
-            <input placeholder="Search" type="search" class="input">
+            <input placeholder="Pesquisar" type="search" class="input">
         </div>
     </header>
 
