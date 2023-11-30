@@ -52,7 +52,7 @@
 
         <div class="row justify-content-center text-center">
             <div class="col-10">
-                <a href=""><button class="w-100 rounded">Editar Informações</button></a>
+                <a href="alteraDados.php"><button class="w-100 rounded">Editar Informações</button></a>
             </div>
             <div class="col-10 gy-2" style="padding-bottom: 8rem;">
                 <a href="cardapio.php"><button class="w-100 rounded">Adicionar serviços</button></a>
