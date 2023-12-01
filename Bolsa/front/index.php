@@ -7,55 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/estilp.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title> Tela de início </title>
 </head>
 
 <body>
     <div class="container">
-        <?php 
-        include_once "cabecalho.php" 
+        <?php
+        include_once "cabecalho.php"
         ?>
         <form class="plan-chooser">
-            <div class="form">
-                <span class="title">Bem vindo (a)! </span>
+            <div class="row">
+                <span class="title">Bem vindo (a)!</span>
+            </div>
+            <div class="row">
                 <p class="desc"> Escolha sua forma de acesso .</p>
             </div>
-            <div class="plan-option">
-                <input value="cliente" id="cliente" name="cliente" type="radio">
-                <label for="cliente" class="ooo">
-                    <div class="plan-info">
-                        <span class="plan-cost">Login</span>
-                        <span class="plan-name"></span>
-                    </div>
-                </label>
+            <div class="row">
+                <button class="btn btn-success">
+                    Login
+                </button>
             </div>
-            <div class="plan-option">
-                <input value="prof" id="prof" name="prof" type="radio">
-                <label for="prof" class="ooo">
-                    <div class="plan-info">
-                        <span class="plan-cost">Cadastro</span>
-                        <span class="plan-name"></span>
-                    </div>
-                </label>
-                <div class="container">
-                    <form class="f2">
-                        <label class="aaa">
-                            <input type="radio" name="radio" checked="" class="b1">
-                            <span class="botao">Cliente</span>
-                        </label>
-                        <label class="aaa">
-                            <input type="radio" name="radio" class="b1">
-                            <span class="botao">Profissional</span>
-                        </label>
-                    </form>
+            <div class="row">
+                <button class="btn btn-success">
+                    Login
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-12"><input type="radio" name="radio" checked="" class="b1">
+                    <span class="botao">Cliente</span>
+
+                <input type="radio" name="radio" class="b1">
+                    <span class="botao">Profissional</span>
                 </div>
-                </label>
+
             </div>
+            <div class="row">
+                <div class="col-12"><a href="#" title="" class="btn btn-primary w-100"> Continuar </a></div>
 
-            <a href="#" title="" class="choose-btn"> Continuar </a>
-
+            </div>
         </form>
     </div>
 </body>
