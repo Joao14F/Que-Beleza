@@ -11,54 +11,53 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title> Tela de início </title>
 </head>
-<header class="header">
-    <a href="#" class="logo"><i class="fa-solid fa-spa"></i> Quê Beleza</a>
-</header>
 
-<body style="padding-top: 7rem; padding-right: 2rem; padding-left:2rem;">
-    <form class="plan-chooser">
-        <div class="form">
-            <span class="title">Bem vindo (a)! </span>
-            <p class="desc"> Escolha sua forma de acesso .</p>
-        </div>
-        <div class="plan-option">
-            <input value="cliente" id="cliente" name="cliente" type="radio">
-            <label for="cliente" class="ooo">
-                <div class="plan-info">
-                    <span class="plan-cost">Login</span>
-                    <span class="plan-name"></span>
-                </div>
-            </label>
-        </div>
-        <div class="plan-option">
-            <input value="prof" id="prof" name="prof" type="radio">
-            <label for="prof" class="ooo">
-                <div class="plan-info">
-                    <span class="plan-cost">Cadastro</span>
-                    <span class="plan-name"></span>
-                </div>
-            </label>
-            <div class="container">
-                <form class="f2">
-                    <label class="aaa">
-                        <input type="radio" name="radio" checked="" class="b1">
-                        <span class="botao">Cliente</span>
-                    </label>
-                    <label class="aaa">
-                        <input type="radio" name="radio" class="b1">
-                        <span class="botao">Profissional</span>
-                    </label>
-                </form>
+<body>
+    <div class="container">
+        <?php 
+        include_once "cabecalho.php" 
+        ?>
+        <form class="plan-chooser">
+            <div class="form">
+                <span class="title">Bem vindo (a)! </span>
+                <p class="desc"> Escolha sua forma de acesso .</p>
             </div>
-            </label>
-        </div>
+            <div class="plan-option">
+                <input value="cliente" id="cliente" name="cliente" type="radio">
+                <label for="cliente" class="ooo">
+                    <div class="plan-info">
+                        <span class="plan-cost">Login</span>
+                        <span class="plan-name"></span>
+                    </div>
+                </label>
+            </div>
+            <div class="plan-option">
+                <input value="prof" id="prof" name="prof" type="radio">
+                <label for="prof" class="ooo">
+                    <div class="plan-info">
+                        <span class="plan-cost">Cadastro</span>
+                        <span class="plan-name"></span>
+                    </div>
+                </label>
+                <div class="container">
+                    <form class="f2">
+                        <label class="aaa">
+                            <input type="radio" name="radio" checked="" class="b1">
+                            <span class="botao">Cliente</span>
+                        </label>
+                        <label class="aaa">
+                            <input type="radio" name="radio" class="b1">
+                            <span class="botao">Profissional</span>
+                        </label>
+                    </form>
+                </div>
+                </label>
+            </div>
 
-        </div>
-        </div>
-        <a href="#" title="" class="choose-btn"> Continuar </a>
+            <a href="#" title="" class="choose-btn"> Continuar </a>
 
-    </form>
-
+        </form>
+    </div>
 </body>
 
 </html>
