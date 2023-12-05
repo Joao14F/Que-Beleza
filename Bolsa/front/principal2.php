@@ -295,13 +295,9 @@
             </div>
         </div>
     </section>
-
-
     <?php
-    require('rodape.php');
+    require('rodape2.php');
     ?>
-    
-
 </body>
 
 </html>

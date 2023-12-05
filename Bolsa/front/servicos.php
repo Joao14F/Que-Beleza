@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conta</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+        :root {
+            --orange: #6A66A3;
+            --black: #130f40;
+            --light-color: #666;
+            --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.23);
+            --border: .2rem solid rgb(0, 0, 0.1);
+            --outline: .1rem solid rgb(0, 0, 0.1);
+            --outline-hover: .2rem solid var(--black);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Poppins';
@@ -110,112 +125,51 @@
             font-size: 0.8rem;
             margin-top: 1.6rem;
         }
+
+        .footer {
+            background-color: #b3cbb9;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            box-shadow: var(--box-shadow);
+        }
+
+        .footer .icons {
+            border-radius: .5rem;
+            color: var(--black);
+            font-size: 1.4rem;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+            align-content: center;
+        }
+
+        .footer .icons:hover {
+            background-color: var(--orange);
+            color: #e5e5e5;
+        }
+
+        .header {
+            background-color: #b3cbb9;
+            box-shadow: var(--box-shadow);
+
+        }
+        a {
+            color: var(--orange);
+            
+        }
     </style>
 </head>
-<?php
-require('cabecalho.php');
-?>
 
 <body>
-    <div class="container" style="padding-top: 8rem;">
+    <div class="container">
+        <?php
+        require('cabecalho.php');
+        ?>
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-12 gx-0">
         </div>
-        <div class="row mt-3">
-            <div class="col-8">
-                <figcaption class="figure-caption">Promoções</figcaption>
-            </div>
-            <div class="image-container d-flex justify-content-start align-items-center">
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 1" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 1 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
 
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 2" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 2 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 3 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 4" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 4 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 5" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 5 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 6" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 6 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 7" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 7 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 8" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 8 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 9" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 9 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 10" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 10 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 11" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 11 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 12" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 12 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 13" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 13 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 14" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 14 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-
-                <div class="image-caption col-5">
-                    <img src="imagens/unhas.jpeg" alt="Image 15" class="img-fluid">
-                    <p class="text-limit">Legenda da Imagem 15 que é um texto de exemplo para testar o limite</p>
-                    <figcaption class="figure-caption-preço">Valor</figcaption>
-                </div>
-            </div>
-        </div>
         <div class="row justify-content-center">
             <col-8>
                 <select name="" id="" class="form-select">
@@ -244,16 +198,15 @@ require('cabecalho.php');
                     </a>
                 </div>
                 <div class="col-7">
-                    <p style="margin-bottom: 3px; padding:5px;" class="text-center">⭐⭐⭐⭐⭐</p>
+                    <p style="margin-bottom: 3px;" class="text-center">⭐⭐⭐⭐⭐</p>
                 </div>
             </div>
         </div>
-        <div style="padding-bottom:8rem"></div>
+        <?php
+        require('rodape2.php');
+        ?>
     </div>
-    </div>
-    <?php
-    require('rodape2.php');
-    ?>
+
 
 </body>
 
