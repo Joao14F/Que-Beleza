@@ -22,14 +22,9 @@
             --outline-hover: .2rem solid var(--black);
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: 'Poppins';
             background-color: #e5e5e5;
-            padding-bottom: 8rem;
         }
 
         p {
@@ -128,9 +123,6 @@
 
         .footer {
             background-color: #b3cbb9;
-            align-items: center;
-            align-content: center;
-            align-self: center;
             box-shadow: var(--box-shadow);
         }
 
@@ -138,10 +130,16 @@
             border-radius: .5rem;
             color: var(--black);
             font-size: 1.4rem;
-            text-align: center;
-            align-items: center;
-            align-self: center;
-            align-content: center;
+        }
+
+        .footer .fa-house {
+            font-size: 3rem;
+            margin: 0.5rem;
+        }
+
+        .footer .fa-user {
+            font-size: 3rem;
+            margin: 0.5rem;
         }
 
         .footer .icons:hover {
@@ -149,14 +147,8 @@
             color: #e5e5e5;
         }
 
-        .header {
-            background-color: #b3cbb9;
-            box-shadow: var(--box-shadow);
-
-        }
         a {
             color: var(--orange);
-            
         }
     </style>
 </head>
@@ -196,9 +188,6 @@
                     <a href="Servico.php">
                         <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
                     </a>
-                </div>
-                <div class="col-7">
-                    <p style="margin-bottom: 3px;" class="text-center">⭐⭐⭐⭐⭐</p>
                 </div>
             </div>
         </div>
