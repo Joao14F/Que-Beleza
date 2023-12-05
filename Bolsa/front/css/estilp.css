@@ -1,0 +1,13 @@
+body {
+    background-color: #3126d422;
+    height: 100dvh;
+  }
+
+  .borda{
+    background-color:lightgray;
+    border-radius: 8px;
+  }
+
+  .btn{
+    height: 5rem;
+  }

@@ -13,42 +13,60 @@
     <title> Tela de início </title>
 </head>
 
-<body>
+<body class="d-flex align-items-center">
     <div class="container">
         <?php
         include_once "cabecalho.php"
         ?>
-        <form class="plan-chooser">
-            <div class="row">
-                <span class="title">Bem vindo (a)!</span>
+        <div class="borda">
+            <div class="row justify-content-center text-center">
+                <div class="col-7">
+                    <h1>Bem vindo (a)!</h1>
+                </div>
             </div>
-            <div class="row">
-                <p class="desc"> Escolha sua forma de acesso .</p>
+            <div class="row justify-content-center text-center">
+                <div class="col-7">
+                    <h4>Escolha sua forma de acesso</h4>
+                </div>
             </div>
-            <div class="row">
-                <button class="btn btn-success">
-                    Login
-                </button>
+            <div class="row justify-content-center text-center m-4">
+                <div class="col-7">
+                    <button class="btn btn-success w-100">
+                        Login
+                    </button>
+                </div>
             </div>
-            <div class="row">
-                <button class="btn btn-success">
-                    Login
-                </button>
+            <div class="row justify-content-center text-center m-4">
+                <div class="col-7">
+                    <button class="btn btn-success w-100">
+                        Cadastro
+                    </button>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-12"><input type="radio" name="radio" checked="" class="b1">
+            <div class="row justify-content-center text-center m-2">
+                <div class="col-7">
+                    <input type="radio" name="radio" checked="" class="b1">
                     <span class="botao">Cliente</span>
-
-                <input type="radio" name="radio" class="b1">
+                </div>
+            </div>
+            <div class="row justify-content-center text-center m-2">
+                <div class="col-7">
+                    <input type="radio" name="radio" checked="" class="b1">
                     <span class="botao">Profissional</span>
                 </div>
-
             </div>
-            <div class="row">
-                <div class="col-12"><a href="#" title="" class="btn btn-primary w-100"> Continuar </a></div>
 
+            <div class="row justify-content-center text-center m-3">
+                <div class="col-7">
+                    <a href="#">
+                        <button class="btn btn-primary w-100">
+                            Continuar
+                        </button>
+                    </a>
+                </div>
             </div>
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 
