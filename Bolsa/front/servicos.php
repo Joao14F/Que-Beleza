@@ -152,11 +152,14 @@
         .header {
             background-color: #b3cbb9;
             box-shadow: var(--box-shadow);
+            padding: 1rem;
 
         }
         a {
             color: var(--orange);
-            
+            font-family: 'Poppins';
+            font-size: 1.3rem;
+            text-decoration: none;
         }
     </style>
 </head>

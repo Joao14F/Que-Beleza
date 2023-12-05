@@ -8,10 +8,6 @@
     --outline: .1rem solid rgb(0, 0, 0.1);
     --outline-hover: .2rem solid var(--black);
   }
-img {
-    padding: 1rem;
-}
-
 .dados {
     font-size: large;
 }
@@ -44,7 +40,6 @@ a {
     color: #6a66a3;
     text-decoration: none;
     padding: 3px;
-    font-weight: bold;
 }
 
 button {
@@ -62,3 +57,15 @@ button {
   button:hover {
     background-color: #542e54;
   }
+  .header {
+    background-color: #b3cbb9;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+
+}
+a.logo {
+    color: var(--orange);
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    text-decoration: none;
+}

@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços de Cadastro</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/cardapio.css">
     <style>
 
     </style>
 </head>
-<?php
-require('cabecalho.php');
-?>
 
 <body class="d-flex align-items-center">
-    <div class="container" style="padding-top: 18rem;">
+    <div class="container">
+        <?php
+        require('cabecalho.php');
+        ?>
         <div class="bloco">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12">
@@ -86,7 +87,7 @@ require('cabecalho.php');
                 </button>
             </div>
         </div>
-        <form class="form text-center" action="" method="post" style="padding-bottom: 8rem;">
+        <form class="form text-center" action="" method="post">
             <div class="select col-8 col-sm-8 col-md-8 text-center" style="margin: 0 auto;">
                 <select>
                     <option hidden value="1">Cadastrar serviços</option>
@@ -97,10 +98,11 @@ require('cabecalho.php');
             </div>
 
         </form>
+        <footer><?php
+                require('rodape2.php');
+                ?></footer>
     </div>
-    <footer><?php
-            require('rodape2.php');
-            ?></footer>
+
 
 </body>
 
