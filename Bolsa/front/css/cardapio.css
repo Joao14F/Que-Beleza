@@ -2,140 +2,162 @@
 
 
 body {
-    background-color: #6a66a33f;
-    height: 100%;
-    position: relative;
-  }
-  
-  .bloco {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 0.8rem;
-    padding: 1rem;
-    }
+  background-color: #6a66a33f;
+  height: 100%;
+  position: relative;
+}
 
-  h4 {
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 1.4rem;
-  }
+.bloco {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0.8rem;
+  padding: 1rem;
+}
 
-  .bloco dt {
-    font-size: 1rem; /* Use 'em' for font size */
-    font-weight: bold;
-    font-family: 'Poppins';
+h4 {
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1.4rem;
+}
 
-  }
-  
-  .bloco dd {
-    font-size: 1rem;
-    margin-bottom: 0.7rem; /* Use 'em' for margin */
-    font-family: 'Poppins';
+.bloco dt {
+  font-size: 1rem;
+  /* Use 'em' for font size */
+  font-weight: bold;
+  font-family: 'Poppins';
 
-  }
+}
 
-  input {
-    width: 300px;
+.bloco dd {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  /* Use 'em' for margin */
+  font-family: 'Poppins';
 
-  }
+}
 
-  a {
-    text-decoration: none;
-  }
+input {
+  width: 300px;
+
+}
 
 
-  button { 
+button {
   padding: 3px;
   padding-right: 7px;
   padding-left: 7px;
 
-  }
+}
 
-  .add{
-    border: none;
-    outline: none;
-    background-color: #b3cbb9;
-    padding: 10px 20px;
-    font-size: 13px;
-    font-weight: 700;
-    color: black;
-    border-radius: 5px;
-    transition: all ease 0.1s;
-    box-shadow: 0px 5px 0px 0px #2f4b36af;
-    width: 220px;
-  }
-  
-  .add:active {
-    transform: translateY(5px);
-    box-shadow: 0px 0px 0px 0px #a29bfe;
-  }
+.add {
+  border: none;
+  outline: none;
+  background-color: #b3cbb9;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #2f4b36af;
+  width: 220px;
+}
 
-  :root {
-    --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
-    --gray: #34495e;
-    --darkgray: #2c3e50;
-  }
-  
-  select {
-    /* Reset Select */
-    appearance: none;
-    outline: 10px;
-    border: 0 ;
-    box-shadow: none;
-    /* Personalize */
-    flex: 1;
-    padding: 0 1em;
-    color: black;
-    background-color:#6a66a392;
-    background-image: none;
-    cursor: pointer;
-    width: 100px;
-    font-weight: bold;
-  }
-  /* Remove IE arrow */
-  select::-ms-expand {
-    display: none;
+.add:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #a29bfe;
+}
 
-  }
-  /* Custom Select wrapper */
-  .select {
-    position: relative;
-    display: flex;
-    width: 13em;
-    height: 3em;
-    border-radius: .25em;
-    overflow: hidden;
-    align-self: center;
-    align-content: center;
-    
-  }
-  /* Arrow */
-  .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1em;
-    transition: .25s all ease;
-    pointer-events: none;
-  }
-  /* Transition */
-  .select:hover::after {
-    color: #6A66A3;
-  }
-  
-  /* Other styles*/
-  a {
-    font-weight: bold;
-    color: var(--gray);
-    text-decoration: drop-shadow;
-    padding: .25em;
-    border-radius: .50em;
-  }
-  
-  .down_note {
-      display: flex;
-      justify-content: center;
-  
-  }
+:root {
+  --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+  --orange: #6A66A3;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.23);
+  --border: .2rem solid rgb(0, 0, 0.1);
+  --outline: .1rem solid rgb(0, 0, 0.1);
+  --outline-hover: .2rem solid var(--black);
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 10px;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: black;
+  background-color: #6a66a392;
+  background-image: none;
+  cursor: pointer;
+  width: 100px;
+  font-weight: bold;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+
+}
+
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 13em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+  align-self: center;
+  align-content: center;
+
+}
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #6A66A3;
+}
+
+/* Other styles*/
+a {
+  color: var(--gray);
+  text-decoration: none;
+  padding: .25em;
+  border-radius: .50em;
+}
+
+.down_note {
+  display: flex;
+  justify-content: center;
+
+}
+
+.header {
+  background-color: #b3cbb9;
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+
+}
+
+a.logo {
+  color: #6A66A3;
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  text-decoration: none;
+}

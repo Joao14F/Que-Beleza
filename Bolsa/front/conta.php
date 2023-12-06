@@ -11,17 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/conta.css">
     <style>
-   
+
 
     </style>
 </head>
-<?php
-require('cabecalho.php');
-?>
+
 <body>
-    <div class="container" style="padding-top: 9rem;">
+    <div class="container">
+        <?php
+        require('cabecalho.php');
+        ?>
         <div class="row">
-            <img src="imagens/unhas.jpeg" alt="imagnes ficticea" width="150px" height="100px" class="col-5 col-sm-5 img-fluid">
+            <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-5 col-sm-col-md-1 img-fluid">
             <div class="Dados col-7 col-sm-7">
                 <h1 class="Nome">Nome</h1>
                 <p>Descrição</p>
@@ -29,54 +30,57 @@ require('cabecalho.php');
             </div>
         </div>
         <div class="row">
-        <div class="container">
-            <div class=" stars row">
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
+            <div class="container">
+                <div class=" stars row">
+                    <div class="col-1">
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-star "></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fas fa-star "></i>
+                    </div>
                 </div>
             </div>
-        </div>        
         </div>
         <div class="row text-center">
             <h1 class="hist">Histórico</h1>
         </div>
         <div class="row">
-        <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
-        <table class="table table-striped">
-            <tbody>
-                <tr>
-                    <th>14/09/23</th>
-                    <td>
-                        <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
-                        <br>
-                        Pintura do cabelo com <a href="prestador.php">Pessoa2</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>12/10/23</th>
-                    <td>
-                        <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
-                        <br>
-                        Pintura do cabelo com <a href="prestador.php">Pessoa2</a></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th>14/09/23</th>
+                            <td>
+                                <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
+                                    <br>
+                                    Pintura do cabelo com <a href="prestador.php">Pessoa2</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>12/10/23</th>
+                            <td>
+                                <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
+                                    <br>
+                                    Pintura do cabelo com <a href="prestador.php">Pessoa2</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <?php
+        require('rodape2.php');
+        ?>
     </div>
-    <?php
-require('rodape2.php');
-?>
+
 </body>
 
 </html>

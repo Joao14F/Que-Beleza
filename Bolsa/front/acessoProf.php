@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profissional</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
@@ -28,11 +30,6 @@
 
         }
 
-        .container {
-            display: flexbox;
-        }
-
-
         p {
             background-color: #B3CBB9;
             border-radius: 16px;
@@ -51,28 +48,34 @@
             background-color: #6a66a38e;
         }
 
-        a {
-            text-decoration: none;
-            margin-top: -10px;
-            
-        }
-
         .botoes {
             margin: 5px;
             align-self: center;
         }
 
-        img {
-            padding-top: 7rem;
+
+        .header {
+            background-color: #b3cbb9;
+            box-shadow: var(--box-shadow);
+            padding: 1rem;
+
+        }
+
+        a {
+            color: var(--orange);
+            font-family: 'Poppins';
+            font-size: 1.3rem;
+            text-decoration: none;
         }
     </style>
 </head>
-<?php
-require('cabecalho.php');
-?>
+
 
 <body class="d-flex">
     <div class="container">
+        <?php
+        require('cabecalho.php');
+        ?>
         <div class="row salao">
             <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-12 col-sm-12 col-md-12 gx-0 w-100">
         </div>
@@ -99,10 +102,11 @@ require('cabecalho.php');
                 </div>
             </div>
         </div>
+        <?php
+    require('rodape2.php');
+    ?>
     </div>
-    <?php
-require('rodape2.php');
-?>
+   
 </body>
 
 </html>
