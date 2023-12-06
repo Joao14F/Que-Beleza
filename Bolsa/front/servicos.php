@@ -124,6 +124,7 @@
         .footer {
             background-color: #b3cbb9;
             box-shadow: var(--box-shadow);
+            border-radius: 5px;
         }
 
         .footer .icons {
