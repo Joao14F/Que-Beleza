@@ -16,9 +16,9 @@
     <title> Tela de início </title>
 </head>
 
-<body class="d-flex align-items-center">
+<body class="">
     <div class="container">
-    <?php
+        <?php
         require('cabecalho.php');
         ?>
         <div class="borda">
@@ -69,10 +69,10 @@
                 </div>
             </div>
             </form>
-            <?php
-        require('rodape2.php');
-        ?>
         </div>
+        <?php
+            require('rodape2.php');
+            ?>
     </div>
 </body>
 

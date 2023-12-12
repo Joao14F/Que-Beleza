@@ -12,6 +12,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+        .header {
+            background-color: #b3cbb9;
+            box-shadow: var(--box-shadow);
+            padding: 1rem;
+
+        }
+
         :root {
             --orange: #6A66A3;
             --black: #130f40;
@@ -25,6 +32,7 @@
         body {
             font-family: 'Poppins';
             background-color: #e5e5e5;
+            height: 100dvh;
         }
 
         p {
@@ -108,7 +116,7 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            margin: 0px;
+            margin: 0.5rem;
         }
 
         a img {
@@ -148,13 +156,7 @@
             color: #e5e5e5;
         }
 
-        .header {
-            background-color: #b3cbb9;
-            box-shadow: var(--box-shadow);
-            padding: 1rem;
-
-        }
-        a {
+        .footer a {
             color: var(--orange);
             font-family: 'Poppins';
             font-size: 1.3rem;
@@ -201,12 +203,22 @@
                 </div>
             </div>
         </div>
-        <?php
-        require('rodape2.php');
-        ?>
+        <footer class="footer">
+            <div class="row justify-content-center mt-4">
+                <div class="col-6 icons text-center">
+                    <a href="principal2.php">
+                        <div class="fa-solid fa-house" id="home-btn"></div>
+                    </a>
+                </div>
+                <div class="col-6 icons text-center">
+                    <a href="conta.php">
+                        <div class="fas fa-user" id="user-btn"> </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="scripts.js"></script>
     </div>
-
-
 </body>
 
 </html>

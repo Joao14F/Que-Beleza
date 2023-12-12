@@ -2,13 +2,21 @@
 
 
 body {
-  background-color: #3126d422;
+  background-color: #6a66a322;
   height: 100dvh;
 }
 
 .borda {
   background-color: lightgray;
   border-radius: 8px;
+  padding: 0.3rem;
+  margin-top: 28dvh;
+  margin-bottom: 20dvh;
+}
+
+.borda-2 {
+  background-color: lightgray;
+
 }
 
 .btn {
@@ -28,11 +36,45 @@ body {
 .header {
   background-color: #b3cbb9;
   box-shadow: var(--box-shadow);
-  padding: 1rem;
-
+  padding: 2rem;
 }
 
-a.logo {
+.header a.logo {
+  color: var(--orange);
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #b3cbb9;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.footer .icons {
+  border-radius: .5rem;
+  color: var(--black);
+  font-size: 1.4rem;
+}
+
+.footer .fa-house {
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.footer .fa-user {
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.footer .icons:hover {
+  background-color: var(--orange);
+  color: #e5e5e5;
+}
+
+.footer a {
   color: var(--orange);
   font-family: 'Poppins';
   font-size: 1.3rem;

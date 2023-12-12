@@ -1,4 +1,4 @@
-<footer class="footer navbar-fixed-bottom">
+<footer class="footer">
     <div class="row justify-content-center mt-4">
         <div class="col-6 icons text-center">
             <a href="principal2.php">
