@@ -21,59 +21,18 @@
         <?php
         require('cabecalho.php');
         ?>
-        <div class="row">
-            <img src="imagens/unhas.jpeg" alt="imagnes ficticea" class="col-5 col-sm-col-md-1 img-fluid">
-            <div class="Dados col-7 col-sm-7">
-                <h1 class="Nome">Nome</h1>
-                <p>Descrição</p>
-                <p>Acesso</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="container">
-                <div class=" stars row">
-                    <div class="col-1">
-                        <i class="fas fa-star "></i>
-                    </div>
-                    <div class="col-1">
-                        <i class="fas fa-star "></i>
-                    </div>
-                    <div class="col-1">
-                        <i class="fas fa-star "></i>
-                    </div>
-                    <div class="col-1">
-                        <i class="fas fa-star "></i>
-                    </div>
+        <div class="corpo">
+            <div class="row">
+                <div class="Dados col-12">
+                    <h1 class="Nome">Nome</h1>
+                    <p>Descrição</p>
+                    <p>Acesso</p>
                 </div>
             </div>
-        </div>
-        <div class="row text-center">
-            <h1 class="hist">Histórico</h1>
-        </div>
-        <div class="row">
-            <div class="table-responsive table-responsive-sm table-responsive-md table-striped">
-                <table class="table table-striped">
-                    <tbody>
-                        <tr>
-                            <th>14/09/23</th>
-                            <td>
-                                <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
-                                    <br>
-                                    Pintura do cabelo com <a href="prestador.php">Pessoa2</a>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>12/10/23</th>
-                            <td>
-                                <p>Pintura das unhas com <a href="prestador.php">Pessoa1</a>
-                                    <br>
-                                    Pintura do cabelo com <a href="prestador.php">Pessoa2</a>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <button class="btn btn-danger w-100">SAIR</button>
+                </div>
             </div>
         </div>
         <?php

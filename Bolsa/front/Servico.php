@@ -23,22 +23,6 @@ require('cabecalho.php');
         <div class="row salao">
             <img src="../front/fotos/maq.jpg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-6 gx-0">
         </div>
-        <div class="container">
-            <div class=" stars row">
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-                <div class="col-1">
-                    <i class="fas fa-star "></i>
-                </div>
-            </div>
-        </div>
         <h3 class="aaa">Maquiagem </h3>
     </div>
     <div class="row mt-3 justify-content-center ">

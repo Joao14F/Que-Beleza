@@ -129,37 +129,54 @@
             margin-top: 1.6rem;
         }
 
+        .corpo {
+            padding-bottom: 6rem;
+        }
+
         .footer {
             background-color: #b3cbb9;
             box-shadow: var(--box-shadow);
             border-radius: 5px;
+            position: fixed;
+            height: 5rem;
+            bottom: 0rem;
+            width: 100%;
+            left: 0rem;
         }
 
         .footer .icons {
             border-radius: .5rem;
             color: var(--black);
-            font-size: 1.4rem;
+            height: 5rem;
         }
 
         .footer .fa-house {
             font-size: 3rem;
-            margin: 0.5rem;
+            position: fixed;
+            bottom: 1rem;
+            left: 12.5rem;
         }
 
         .footer .fa-user {
             font-size: 3rem;
-            margin: 0.5rem;
+            position: fixed;
+            bottom: 1rem;
+            right: 12.5rem;
         }
 
-        .footer .icons:hover {
-            background-color: var(--orange);
+        .footer .fa-user:hover {
             color: #e5e5e5;
+            border-radius: 5px;
+        }
+
+        .footer .fa-house:hover {
+            color: #e5e5e5;
+            border-radius: 5px;
         }
 
         .footer a {
             color: var(--orange);
             font-family: 'Poppins';
-            font-size: 1.3rem;
             text-decoration: none;
         }
     </style>
@@ -170,55 +187,44 @@
         <?php
         require('cabecalho.php');
         ?>
-        <div class="row salao">
-            <img src="imagens/unhas.jpeg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-12 gx-0">
-        </div>
+        <div class="corpo">
+            <div class="row salao">
+                <img src="imagens/unhas.jpeg" alt="imagens ficticias" class="col-12 col-sm-12 col-md-12 gx-0">
+            </div>
 
-        <div class="row justify-content-center">
-            <col-8>
-                <select name="" id="" class="form-select">
-                    <option value="">
-                        <p class="text-responsive">Melhor avaliaçao</p>
-                    </option>
-                    <option value="">
-                        <p class="text-responsive">Menorpreço</p>
-                    </option>
-                    <option value="">
-                        <p class="text-responsive">Maior preço</p>
-                    </option>
-                </select>
-            </col-8>
+            <div class="row justify-content-center">
+                <col-8>
+                    <select name="" id="" class="form-select">
+                        <option value="">
+                            <p class="text-responsive">Melhor avaliaçao</p>
+                        </option>
+                        <option value="">
+                            <p class="text-responsive">Menorpreço</p>
+                        </option>
+                        <option value="">
+                            <p class="text-responsive">Maior preço</p>
+                        </option>
+                    </select>
+                </col-8>
 
-        </div>
-        <div class="mt-3 bg-white rounded-2 p-2 m-1">
-            <div class="row justify-content-end">
-                <div class="col-5">
-                    <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
-                    <p style="margin-bottom: 3px;">VALOR</p>
-                </div>
-                <div class="col-7 d-flex align-items-center">
-                    <a href="Servico.php">
-                        <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
-                    </a>
+            </div>
+            <div class="mt-3 bg-white rounded-2 p-2 m-1">
+                <div class="row justify-content-end">
+                    <div class="col-5">
+                        <p style="margin-bottom: 3px; font-size: 16px">Nome serviço</p>
+                        <p style="margin-bottom: 3px;">VALOR</p>
+                    </div>
+                    <div class="col-7 d-flex align-items-center">
+                        <a href="Servico.php">
+                            <img src="imagens/unhas.jpeg" alt="Image 3" class="img-fluid">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="row justify-content-center mt-4">
-                <div class="col-6 icons text-center">
-                    <a href="principal2.php">
-                        <div class="fa-solid fa-house" id="home-btn"></div>
-                    </a>
-                </div>
-                <div class="col-6 icons text-center">
-                    <a href="conta.php">
-                        <div class="fas fa-user" id="user-btn"> </div>
-                    </a>
-                </div>
-            </div>
-        </footer>
-        <script src="scripts.js"></script>
-    </div>
+        <?php
+        require('rodape2.php');
+        ?>
 </body>
 
 </html>

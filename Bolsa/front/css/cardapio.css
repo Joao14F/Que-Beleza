@@ -161,3 +161,54 @@ a.logo {
   font-size: 1.3rem;
   text-decoration: none;
 }
+
+.corpo {
+  padding-bottom: 6rem;
+}
+
+.footer {
+  background-color: #b3cbb9;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  position: fixed;
+  height: 5rem;
+  bottom: 0rem;
+  width: 100%;
+  left: 0rem;
+}
+
+.footer .icons {
+  border-radius: .5rem;
+  color: var(--black);
+  height: 5rem;
+}
+
+.footer .fa-house {
+  font-size: 3rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 12.5rem;
+}
+
+.footer .fa-user {
+  font-size: 3rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 12.5rem;
+}
+
+.footer .fa-user:hover {
+  color: #e5e5e5;
+  border-radius: 5px;
+}
+
+.footer .fa-house:hover {
+  color: #e5e5e5;
+  border-radius: 5px;
+}
+
+.footer a {
+  color: var(--orange);
+  font-family: 'Poppins';
+  text-decoration: none;
+}

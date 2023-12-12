@@ -21,58 +21,60 @@
         <?php
         require('cabecalho.php');
         ?>
-        <div class="borda">
-            <div class="row justify-content-center text-center">
-                <div class="col-7">
-                    <h1>Bem vindo (a)!</h1>
+        <div class="corpo">
+            <div class="borda">
+                <div class="row justify-content-center text-center">
+                    <div class="col-7">
+                        <h1>Bem vindo (a)!</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center text-center">
-                <div class="col-7">
-                    <h4>Escolha sua forma de acesso</h4>
+                <div class="row justify-content-center text-center">
+                    <div class="col-7">
+                        <h4>Escolha sua forma de acesso</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center text-center m-4">
-                <div class="col-7">
-                    <button class="btn btn-success w-100">
-                        Login
-                    </button>
-                </div>
-            </div>
-            <div class="row justify-content-center text-center m-4">
-                <div class="col-7">
-                    <button class="btn btn-success w-100">
-                        Cadastro
-                    </button>
-                </div>
-            </div>
-            <div class="row justify-content-center text-center m-2">
-                <div class="col-7">
-                    <input type="radio" name="radio" checked="" class="b1">
-                    <span class="botao">Cliente</span>
-                </div>
-            </div>
-            <div class="row justify-content-center text-center m-2">
-                <div class="col-7">
-                    <input type="radio" name="radio" checked="" class="b1">
-                    <span class="botao">Profissional</span>
-                </div>
-            </div>
-
-            <div class="row justify-content-center text-center m-3">
-                <div class="col-7">
-                    <a href="#">
-                        <button class="btn btn-primary w-100">
-                            Continuar
+                <div class="row justify-content-center text-center m-4">
+                    <div class="col-7">
+                        <button class="btn btn-success w-100">
+                            Login
                         </button>
-                    </a>
+                    </div>
                 </div>
+                <div class="row justify-content-center text-center m-4">
+                    <div class="col-7">
+                        <button class="btn btn-success w-100">
+                            Cadastro
+                        </button>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center m-2">
+                    <div class="col-7">
+                        <input type="radio" name="radio" checked="" class="b1">
+                        <span class="botao">Cliente</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center m-2">
+                    <div class="col-7">
+                        <input type="radio" name="radio" checked="" class="b1">
+                        <span class="botao">Profissional</span>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center text-center m-3">
+                    <div class="col-7">
+                        <a href="#">
+                            <button class="btn btn-primary w-100">
+                                Continuar
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                </form>
             </div>
-            </form>
         </div>
         <?php
-            require('rodape2.php');
-            ?>
+        require('rodape2.php');
+        ?>
     </div>
 </body>
 
